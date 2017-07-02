@@ -22,6 +22,11 @@ private:
     std::vector<Bullet> bullets;
 
     int controls[5];
+    Vector2f currentVelocity;
+    float maxVelocity;
+    float acceleration;
+    Vector2f direction;
+    float stabilizerForce;
 
     int level;
     int exp;

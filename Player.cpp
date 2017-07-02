@@ -29,6 +29,10 @@ Player::Player(Texture *texture, Texture *bulletTexture,
     this->controls[controls::RIGHT] = RIGHT;
     this->controls[controls::SHOOT] = SHOOT;
 
+    this->maxVelocity = 25.f;
+    this->acceleration = 1.f;
+    this->stabilizerForce = 0.3f;
+
     // playerNr es el número de jugador
     this->playerNr = Player::players;
     Player::players++; // Incrementa variable player static
@@ -40,29 +44,93 @@ Player::~Player()
 
 void Player::Movement()
 {
+    //UP
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::UP] )))
-        this->sprite.move(0.f, -10.f);
+    {
+        this->direction.x = 0.f;
+        this->direction.y = -1.f;
 
+        if (this->currentVelocity.y > -this->maxVelocity && this->direction.y < 0)
+            this->currentVelocity.y += this->direction.y * this->acceleration;
+    }
+
+    //DOWN
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::DOWN] )))
-        this->sprite.move(0.f, 10.f);
+    {
+        this->direction.x = 0.f;
+        this->direction.y = 1.f;
 
+        if (this->currentVelocity.y < this->maxVelocity && this->direction.y > 0)
+            this->currentVelocity.y += this->direction.y * this->acceleration;
+    }
+
+    //LEFT
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::LEFT] )))
-        this->sprite.move(-10.f, 0.f);
+    {
+        this->direction.x = -1.f;
+        this->direction.y = 0.f;
 
+        if (this->currentVelocity.x > -this->maxVelocity && this->direction.x < 0)
+            this->currentVelocity.x += this->direction.x * this->acceleration;
+    }
+
+    //RIGHT
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::RIGHT] )))
-        this->sprite.move(10.f, 0.f);
+    {
+        this->direction.x = 1.f;
+        this->direction.y = 0.f;
+
+        if (this->currentVelocity.x < this->maxVelocity && this->direction.x > 0)
+            this->currentVelocity.x += this->direction.x * this->acceleration;
+    }
+
+    //Drag force (para el player al soltar)
+    if (this->currentVelocity.x > 0)
+    {
+        this->currentVelocity.x -= this->stabilizerForce;
+
+        if (this->currentVelocity.x < 0)
+            this->currentVelocity.x = 0;
+    }
+
+    else if (this->currentVelocity.x < 0)
+    {
+        this->currentVelocity.x += this->stabilizerForce;
+
+        if (this->currentVelocity.x > 0)
+            this->currentVelocity.x = 0;
+    }
+    //------------- Y ------------
+    if (this->currentVelocity.y > 0)
+    {
+        this->currentVelocity.y -= this->stabilizerForce;
+
+        if (this->currentVelocity.y < 0)
+            this->currentVelocity.y = 0;
+    }
+
+    else if (this->currentVelocity.y < 0)
+    {
+        this->currentVelocity.y += this->stabilizerForce;
+
+        if (this->currentVelocity.y > 0)
+            this->currentVelocity.y = 0;
+    }
+
+    // Movimiento final
+    this->sprite.move(this->currentVelocity.x, this->currentVelocity.y);
 }
 
-void Player::Combat() // Si ha pasado el tiempo adecuado crear proyectil
-{
+void Player::Combat()
+{   // Si ha pasado el tiempo adecuado crear proyectil y reiniciar contador de tiempo
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::SHOOT] ))
         && this->shootTimer >= this->shootTimerMax)
     {
         this->bullets.push_back(
                 Bullet(bulletTexture, // textura
                        this->playerCenter, // posición
-                       Vector2f(1.f, 0.f), 5.f, // dirección, velocidad inicial
-                       35.f, 0.5f)); // velocidad máxima, aceleración
+                       Vector2f(1.f, 0.f), 2.f, // dirección, velocidad inicial
+                       50.f, 1.f)); // velocidad máxima, aceleración
 
         this->shootTimer = 0; //Reset Timer! (poner contador al inicio)
     }

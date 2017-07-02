@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(Cap06)
+project(Cap07)
 
 set(CMAKE_CXX_STANDARD 14)
 
