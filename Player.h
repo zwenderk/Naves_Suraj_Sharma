@@ -14,17 +14,13 @@ private:
     int damageTimer;
     int damageTimerMax;
 
-    Texture *texture; // Nave
-    Sprite sprite;
+    Sprite sprite; // Nave
     RectangleShape hitBox;
 
     //Accesorios
-    Texture *mainGunTexture; // Cañón
-    Sprite mainGunSprite;
-
-
-    Texture *bulletTexture;
+    Sprite mainGunSprite; // Cañón
     std::vector<Bullet> bullets;
+    Texture *bulletTexture;
 
     int controls[5];
     Vector2f currentVelocity;
@@ -46,7 +42,7 @@ private:
     int score;
 
 public:
-    Player(Texture *texture, Texture *bulletTexture, Texture *mainGunTexture,
+    Player(std::vector<Texture> &textures, // Todas las texturas
            int UP = 22, int DOWN = 18, // números según el enum key en Keyboard.hpp
            int LEFT = 0, int RIGHT = 3,
            int SHOOT = 57);

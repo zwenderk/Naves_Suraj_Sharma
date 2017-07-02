@@ -42,10 +42,10 @@ RM = "H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08"
+CMAKE_SOURCE_DIR = "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\cmake-build-debug"
+CMAKE_BINARY_DIR = "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Cap08.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Cap08.dir/flags.make
 CMakeFiles/Cap08.dir/main.cpp.obj: CMakeFiles/Cap08.dir/flags.make
 CMakeFiles/Cap08.dir/main.cpp.obj: CMakeFiles/Cap08.dir/includes_CXX.rsp
 CMakeFiles/Cap08.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Cap08.dir/main.cpp.obj"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cap08.dir\main.cpp.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Cap08.dir/main.cpp.obj"
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cap08.dir\main.cpp.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\main.cpp"
 
 CMakeFiles/Cap08.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cap08.dir/main.cpp.i"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\main.cpp" > CMakeFiles\Cap08.dir\main.cpp.i
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\main.cpp" > CMakeFiles\Cap08.dir\main.cpp.i
 
 CMakeFiles/Cap08.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cap08.dir/main.cpp.s"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\main.cpp" -o CMakeFiles\Cap08.dir\main.cpp.s
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\main.cpp" -o CMakeFiles\Cap08.dir\main.cpp.s
 
 CMakeFiles/Cap08.dir/main.cpp.obj.requires:
 
@@ -84,16 +84,16 @@ CMakeFiles/Cap08.dir/main.cpp.obj.provides.build: CMakeFiles/Cap08.dir/main.cpp.
 CMakeFiles/Cap08.dir/Game.cpp.obj: CMakeFiles/Cap08.dir/flags.make
 CMakeFiles/Cap08.dir/Game.cpp.obj: CMakeFiles/Cap08.dir/includes_CXX.rsp
 CMakeFiles/Cap08.dir/Game.cpp.obj: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Cap08.dir/Game.cpp.obj"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cap08.dir\Game.cpp.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\Game.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Cap08.dir/Game.cpp.obj"
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cap08.dir\Game.cpp.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\Game.cpp"
 
 CMakeFiles/Cap08.dir/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cap08.dir/Game.cpp.i"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\Game.cpp" > CMakeFiles\Cap08.dir\Game.cpp.i
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\Game.cpp" > CMakeFiles\Cap08.dir\Game.cpp.i
 
 CMakeFiles/Cap08.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cap08.dir/Game.cpp.s"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\Game.cpp" -o CMakeFiles\Cap08.dir\Game.cpp.s
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\Game.cpp" -o CMakeFiles\Cap08.dir\Game.cpp.s
 
 CMakeFiles/Cap08.dir/Game.cpp.obj.requires:
 
@@ -109,16 +109,16 @@ CMakeFiles/Cap08.dir/Game.cpp.obj.provides.build: CMakeFiles/Cap08.dir/Game.cpp.
 CMakeFiles/Cap08.dir/Player.cpp.obj: CMakeFiles/Cap08.dir/flags.make
 CMakeFiles/Cap08.dir/Player.cpp.obj: CMakeFiles/Cap08.dir/includes_CXX.rsp
 CMakeFiles/Cap08.dir/Player.cpp.obj: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Cap08.dir/Player.cpp.obj"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cap08.dir\Player.cpp.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\Player.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Cap08.dir/Player.cpp.obj"
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cap08.dir\Player.cpp.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\Player.cpp"
 
 CMakeFiles/Cap08.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cap08.dir/Player.cpp.i"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\Player.cpp" > CMakeFiles\Cap08.dir\Player.cpp.i
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\Player.cpp" > CMakeFiles\Cap08.dir\Player.cpp.i
 
 CMakeFiles/Cap08.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cap08.dir/Player.cpp.s"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\Player.cpp" -o CMakeFiles\Cap08.dir\Player.cpp.s
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\Player.cpp" -o CMakeFiles\Cap08.dir\Player.cpp.s
 
 CMakeFiles/Cap08.dir/Player.cpp.obj.requires:
 
@@ -134,16 +134,16 @@ CMakeFiles/Cap08.dir/Player.cpp.obj.provides.build: CMakeFiles/Cap08.dir/Player.
 CMakeFiles/Cap08.dir/Bullet.cpp.obj: CMakeFiles/Cap08.dir/flags.make
 CMakeFiles/Cap08.dir/Bullet.cpp.obj: CMakeFiles/Cap08.dir/includes_CXX.rsp
 CMakeFiles/Cap08.dir/Bullet.cpp.obj: ../Bullet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Cap08.dir/Bullet.cpp.obj"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cap08.dir\Bullet.cpp.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\Bullet.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Cap08.dir/Bullet.cpp.obj"
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cap08.dir\Bullet.cpp.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\Bullet.cpp"
 
 CMakeFiles/Cap08.dir/Bullet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cap08.dir/Bullet.cpp.i"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\Bullet.cpp" > CMakeFiles\Cap08.dir\Bullet.cpp.i
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\Bullet.cpp" > CMakeFiles\Cap08.dir\Bullet.cpp.i
 
 CMakeFiles/Cap08.dir/Bullet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cap08.dir/Bullet.cpp.s"
-	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\Bullet.cpp" -o CMakeFiles\Cap08.dir\Bullet.cpp.s
+	H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\Bullet.cpp" -o CMakeFiles\Cap08.dir\Bullet.cpp.s
 
 CMakeFiles/Cap08.dir/Bullet.cpp.obj.requires:
 
@@ -174,7 +174,7 @@ Cap08.exe: CMakeFiles/Cap08.dir/build.make
 Cap08.exe: CMakeFiles/Cap08.dir/linklibs.rsp
 Cap08.exe: CMakeFiles/Cap08.dir/objects1.rsp
 Cap08.exe: CMakeFiles/Cap08.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Cap08.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Cap08.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Cap08.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -194,6 +194,6 @@ CMakeFiles/Cap08.dir/clean:
 .PHONY : CMakeFiles/Cap08.dir/clean
 
 CMakeFiles/Cap08.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\cmake-build-debug" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\cmake-build-debug" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap08\cmake-build-debug\CMakeFiles\Cap08.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\cmake-build-debug" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\cmake-build-debug" "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap09\cmake-build-debug\CMakeFiles\Cap08.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Cap08.dir/depend
 

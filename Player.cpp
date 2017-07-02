@@ -4,7 +4,7 @@ unsigned Player::players = 0;
 
 enum controls {UP = 0, DOWN, LEFT, RIGHT, SHOOT};
 
-Player::Player(Texture *texture, Texture *bulletTexture, Texture *mainGunTexture,
+Player::Player(std::vector<Texture> &textures,
                int UP, int DOWN,
                int LEFT, int RIGHT,
                int SHOOT)
@@ -13,14 +13,17 @@ Player::Player(Texture *texture, Texture *bulletTexture, Texture *mainGunTexture
          damage(1), damageMax(2),
          score(0)
 {
-    this->texture = texture;
-    this->bulletTexture = bulletTexture;
-    this->sprite.setTexture(*this->texture);
-    this->sprite.setScale(0.13f, 0.13f); // Reduce el tamaño del sprite
 
-    this->mainGunTexture = mainGunTexture;
-    this->mainGunSprite.setTexture(*this->mainGunTexture);
-    this->mainGunSprite.setOrigin( // Situa el cañon en el centro de la nave ???NO SE
+    //this->sprite.setTexture(textures[1]); // Textura del proyectil
+    //this->sprite.setScale(0.13f, 0.13f); // Reduce el tamaño del sprite
+
+    this->sprite.setTexture(textures[0]); // Textura de la nave
+    this->sprite.setScale(0.13f, 0.13f);
+
+    this->bulletTexture = &textures[1]; // Textura del proyectil
+
+    this->mainGunSprite.setTexture(textures[2]); // Textura del cañon
+    this->mainGunSprite.setOrigin( // Situa el cañon en el centro de la nave
             this->mainGunSprite.getGlobalBounds().width / 2,
             this->mainGunSprite.getGlobalBounds().height / 2);
     this->mainGunSprite.rotate(90); // Rota el cañon 90 grados
@@ -40,7 +43,7 @@ Player::Player(Texture *texture, Texture *bulletTexture, Texture *mainGunTexture
     this->acceleration = 0.8f;
     this->stabilizerForce = 0.4f;
 
-    // playerNr es el número de jugador
+    // Añade número de players, playerNr es el número de jugador
     this->playerNr = Player::players;
     Player::players++; // Incrementa variable player static
 }
@@ -51,9 +54,25 @@ Player::~Player()
 
 void Player::UpdateAccesories()
 {
+    // Establecer la posición del cañon para que siga a la nave
     this->mainGunSprite.setPosition(
-            this->playerCenter.x + 20.f,
+            this->mainGunSprite.getPosition().x, // El cañon se mueve en la nave
             this->playerCenter.y); // Situa cañon en la nave
+
+
+    // Animar el cañon principal y lo corrige despues de disparar
+    if (this->mainGunSprite.getPosition().x < this->playerCenter.x + 20.f)
+    {
+        this->mainGunSprite.move(2.f + this->currentVelocity.x, 0.f);
+    }
+
+    if (this->mainGunSprite.getPosition().x > this->playerCenter.x + 20.f)
+    {
+        this->mainGunSprite.setPosition(
+                this->playerCenter.x + 20.f, // Situar el cañon en el centro de la nave + 20 en x
+                this->playerCenter.y);
+    }
+
 
 }
 
@@ -149,9 +168,14 @@ void Player::Combat()
     {
         this->bullets.push_back(
                 Bullet(bulletTexture, // textura
-                       this->playerCenter, // posición
+                       Vector2f(this->playerCenter.x + 50.f, this->playerCenter.y), // posición inicial del proyectil
                        Vector2f(1.f, 0.f), 2.f, // dirección, velocidad inicial
                        50.f, 1.f)); // velocidad máxima, aceleración
+
+        // Animar cañon
+        this->mainGunSprite.move(-30.f, 0.f);
+
+
 
         this->shootTimer = 0; //Reset Timer! (poner contador al inicio)
     }

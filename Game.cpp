@@ -1,23 +1,30 @@
 #include "Game.h"
 
+enum textures{player = 0, missile01, mainGun01};
+
 Game::Game(RenderWindow *window)
 {
     this->window = window;
     this->window->setFramerateLimit(60);
 
-    //Init fonts
+    //Inicializa fonts
     this->font.loadFromFile("../Fonts/Dosis-Light.ttf");
 
-    //Init textures
-    this->playerTexture.loadFromFile("../Textures/ship.png");
-    this->bulletTexture.loadFromFile("../Textures/Guns/missileTex01.png");
-    this->gunTexture01.loadFromFile("../Textures/Guns/gun01.png");
+    //Inicializa texturas
+    this->textures.push_back(Texture()); // Textura de la nave
+    this->textures[player].loadFromFile("../Textures/ship.png");
 
-    //Init players
-    this->players.push_back(Player(&playerTexture, &bulletTexture, &gunTexture01));
+    this->textures.push_back(Texture()); // Textura del proyectil
+    this->textures[missile01].loadFromFile("../Textures/Guns/missileTex01.png");
 
-    /*this->players.push_back(Player(&playerTexture, &bulletTexture,
-          Keyboard::I, Keyboard::K, Keyboard::J, Keyboard::L, Keyboard::RShift ));*/
+    this->textures.push_back(Texture()); // Textura cañon
+    this->textures[mainGun01].loadFromFile("../Textures/Guns/gun01.png");
+
+    //Inicializa players
+    this->players.push_back(Player(this->textures));
+
+    this->players.push_back(Player(this->textures,
+          Keyboard::I, Keyboard::K, Keyboard::J, Keyboard::L, Keyboard::RShift ));
 
     this->InitUI();
 }
