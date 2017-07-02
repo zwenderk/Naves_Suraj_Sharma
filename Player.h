@@ -11,8 +11,10 @@ class Player
 {
 private:
     Texture *texture;
-    Sprite shape;
+    Sprite sprite;
     RectangleShape hitBox;
+
+    int controls[5];
 
     int level;
     int exp;
@@ -27,10 +29,14 @@ private:
     int score;
 
 public:
-    Player();
+    Player(Texture *texture,
+           int UP = 22, int DOWN = 18, // números según el enum key en Keyboard.hpp
+           int LEFT = 0, int RIGHT = 3,
+           int SHOOT = 57);
     virtual ~Player();
 
+    void Movement();
     void Update();
-    void Draw();
+    void Draw(RenderTarget &target);
 };
 

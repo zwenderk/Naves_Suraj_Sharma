@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(Cap01)
+project(Cap02)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -8,7 +8,12 @@ find_package(OpenGL REQUIRED)
 set(SFML_INCLUDE_PATH h:/ProyectosCLion/__LIBRERIAS__/SFML-2.4.1/include)
 set(SFML_LIBRARY_PATH h:/ProyectosCLion/__LIBRERIAS__/SFML-2.4.1/lib)
 
-set(SOURCE_FILES main.cpp Game.cpp Game.h Player.cpp Player.h)
+set(SOURCE_FILES
+        main.cpp
+        Game.cpp
+        Game.h
+        Player.cpp
+        Player.h)
 
 include_directories(
         ${SFML_INCLUDE_PATH}
