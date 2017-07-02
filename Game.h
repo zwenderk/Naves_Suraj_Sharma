@@ -2,15 +2,14 @@
 
 #include "Player.h"
 
-
-
 class Game
 {
 private:
     RenderWindow *window;
 
-    Player *player;
+    std::vector<Player> players;
     Texture playerTexture;
+    Texture bulletTexture;
 public:
     Game(RenderWindow *window);
     virtual ~Game();

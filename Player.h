@@ -1,18 +1,19 @@
 #pragma once
 
-#include "SFML/Graphics.hpp"
-#include "SFML/System.hpp"
-#include "SFML/Audio.hpp"
-#include <iostream>
-
-using namespace sf;
+#include "Bullet.h"
 
 class Player
 {
 private:
+    unsigned playerNr;
+
     Texture *texture;
+
     Sprite sprite;
     RectangleShape hitBox;
+
+    Texture *bulletTexture;
+    std::vector<Bullet> bullets;
 
     int controls[5];
 
@@ -29,7 +30,7 @@ private:
     int score;
 
 public:
-    Player(Texture *texture,
+    Player(Texture *texture, Texture *bulletTexture,
            int UP = 22, int DOWN = 18, // números según el enum key en Keyboard.hpp
            int LEFT = 0, int RIGHT = 3,
            int SHOOT = 57);
@@ -38,5 +39,9 @@ public:
     void Movement();
     void Update();
     void Draw(RenderTarget &target);
+
+    //Statics
+    static unsigned players;
+
 };
 

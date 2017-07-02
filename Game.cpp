@@ -6,30 +6,32 @@ Game::Game(RenderWindow *window)
     this->window->setFramerateLimit(60);
 
     //Init textures
-    playerTexture.loadFromFile("../Textures/ship.png");
+    this->playerTexture.loadFromFile("../Textures/ship.png");
+    this->bulletTexture.loadFromFile("../Textures/Guns/missileTex01.png");
 
     //Init player
-    player = new Player(&this->playerTexture,
-                        Keyboard::I,
-                        Keyboard::K,
-                        Keyboard::J,
-                        Keyboard::L,
-                        Keyboard::LShift);
+    this->players.push_back(Player(&playerTexture, &bulletTexture));
 }
+
 Game::~Game()
 {
-    delete player;
 }
 
 void Game::Update()
 {
-    player->Update();
+    for (size_t i = 0; i < this->players.size(); i++)
+    {
+        this->players[i].Update();
+    }
 }
 
 void Game::Draw()
 {
-    window->clear();
-    player->Draw(*window);
+    this->window->clear();
+    for (size_t i = 0; i < this->players.size(); i++)
+    {
+        this->players[i].Draw(*this->window);
+    }
 
-    window->display();
+    this->window->display();
 }

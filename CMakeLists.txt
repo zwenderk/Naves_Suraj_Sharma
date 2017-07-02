@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(Cap02)
+project(Cap03)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -13,7 +13,7 @@ set(SOURCE_FILES
         Game.cpp
         Game.h
         Player.cpp
-        Player.h)
+        Player.h Bullet.cpp Bullet.h)
 
 include_directories(
         ${SFML_INCLUDE_PATH}

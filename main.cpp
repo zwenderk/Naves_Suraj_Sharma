@@ -2,12 +2,13 @@
 
 int main()
 {
-    RenderWindow window(VideoMode(800,600), "Wingman Game", Style::Default);
-    window.setFramerateLimit(60);
+    // Crea ventana
+    RenderWindow window(VideoMode(1920, 1080), "Wingman Game", Style::Default);
+    window.setFramerateLimit(60); // Limita frames por segundo
 
-    Game game(&window);
+    Game game(&window); // Crea objeto game y le envia el objeto window
 
-    // Game loop
+    // Game loop (bucle principal)
     while (window.isOpen())
     {
         Event event;
