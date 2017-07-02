@@ -4,7 +4,7 @@ unsigned Player::players = 0;
 
 enum controls {UP = 0, DOWN, LEFT, RIGHT, SHOOT};
 
-Player::Player(Texture *texture, Texture *bulletTexture,
+Player::Player(Texture *texture, Texture *bulletTexture, Texture *mainGunTexture,
                int UP, int DOWN,
                int LEFT, int RIGHT,
                int SHOOT)
@@ -18,6 +18,13 @@ Player::Player(Texture *texture, Texture *bulletTexture,
     this->sprite.setTexture(*this->texture);
     this->sprite.setScale(0.13f, 0.13f); // Reduce el tamaño del sprite
 
+    this->mainGunTexture = mainGunTexture;
+    this->mainGunSprite.setTexture(*this->mainGunTexture);
+    this->mainGunSprite.setOrigin( // Situa el cañon en el centro de la nave ???NO SE
+            this->mainGunSprite.getGlobalBounds().width / 2,
+            this->mainGunSprite.getGlobalBounds().height / 2);
+    this->mainGunSprite.rotate(90); // Rota el cañon 90 grados
+
     this->shootTimerMax = 25;
     this->shootTimer = this->shootTimerMax;
     this->damageTimer = 10;
@@ -30,8 +37,8 @@ Player::Player(Texture *texture, Texture *bulletTexture,
     this->controls[controls::SHOOT] = SHOOT;
 
     this->maxVelocity = 25.f;
-    this->acceleration = 1.f;
-    this->stabilizerForce = 0.3f;
+    this->acceleration = 0.8f;
+    this->stabilizerForce = 0.4f;
 
     // playerNr es el número de jugador
     this->playerNr = Player::players;
@@ -40,6 +47,14 @@ Player::Player(Texture *texture, Texture *bulletTexture,
 
 Player::~Player()
 {
+}
+
+void Player::UpdateAccesories()
+{
+    this->mainGunSprite.setPosition(
+            this->playerCenter.x + 20.f,
+            this->playerCenter.y); // Situa cañon en la nave
+
 }
 
 void Player::Movement()
@@ -119,6 +134,12 @@ void Player::Movement()
 
     // Movimiento final
     this->sprite.move(this->currentVelocity.x, this->currentVelocity.y);
+
+    //Update positions
+    this->playerCenter.x = this->sprite.getPosition().x +
+                           this->sprite.getGlobalBounds().width / 2;
+    this->playerCenter.y = this->sprite.getPosition().y +
+                           this->sprite.getGlobalBounds().height / 2;
 }
 
 void Player::Combat()
@@ -145,14 +166,11 @@ void Player::Update(Vector2u windowBounds) // recibe limites en windowBounds
     if (this->damageTimer < this->damageTimerMax)
         this->damageTimer++;
 
-    //Update positions
-    this->playerCenter.x = this->sprite.getPosition().x +
-            this->sprite.getGlobalBounds().width / 2;
-    this->playerCenter.y = this->sprite.getPosition().y +
-            this->sprite.getGlobalBounds().height / 2;
+
 
 
     this->Movement();
+    this->UpdateAccesories(); // Actualiza cañon
     this->Combat();
 }
 
@@ -162,6 +180,8 @@ void Player::Draw(RenderTarget &target)
     {
         this->bullets[i].Draw(target);
     }
+
+    target.draw(this->mainGunSprite); // Dibuja cañon en la nave
 
     target.draw(this->sprite);
 }

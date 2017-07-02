@@ -16,8 +16,10 @@ private:
     std::vector<Player> players;
 
     //Textures
-    Texture playerTexture;
-    Texture bulletTexture;
+    Texture playerTexture; // Textura de la nave
+    Texture bulletTexture; // Textura del proyectil
+    Texture gunTexture01; // Textura arma de disparo
+
 public:
     Game(RenderWindow *window);
     virtual ~Game();
