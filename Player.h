@@ -7,8 +7,12 @@ class Player
 private:
     unsigned playerNr;
 
-    Texture *texture;
+    int shootTimer;
+    int shootTimerMax;
+    int damageTimer;
+    int damageTimerMax;
 
+    Texture *texture;
     Sprite sprite;
     RectangleShape hitBox;
 
@@ -36,8 +40,14 @@ public:
            int SHOOT = 57);
     virtual ~Player();
 
+    //Accesors
+    inline std::vector<Bullet>& getBullets() { return this->bullets;}
+
+
+    //Functions
+    void Combat();
     void Movement();
-    void Update();
+    void Update(Vector2u windowBounds);
     void Draw(RenderTarget &target);
 
     //Statics

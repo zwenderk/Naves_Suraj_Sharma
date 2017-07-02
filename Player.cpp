@@ -16,8 +16,12 @@ Player::Player(Texture *texture, Texture *bulletTexture,
     this->texture = texture;
     this->bulletTexture = bulletTexture;
     this->sprite.setTexture(*this->texture);
-
     this->sprite.setScale(0.13f, 0.13f); // Reduce el tamaño del sprite
+
+    this->shootTimerMax = 25;
+    this->shootTimer = this->shootTimerMax;
+    this->damageTimer = 10;
+    this->damageTimer = this->damageTimer;
 
     this->controls[controls::UP] = UP;
     this->controls[controls::DOWN] = DOWN;
@@ -28,41 +32,49 @@ Player::Player(Texture *texture, Texture *bulletTexture,
     // playerNr es el número de jugador
     this->playerNr = Player::players;
     Player::players++; // Incrementa variable player static
-
-    std::cout << this->playerNr << "\n";
-
 }
 
 Player::~Player()
 {
-
 }
 
 void Player::Movement()
 {
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::UP] )))
         this->sprite.move(0.f, -10.f);
+
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::DOWN] )))
         this->sprite.move(0.f, 10.f);
+
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::LEFT] )))
         this->sprite.move(-10.f, 0.f);
+
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::RIGHT] )))
         this->sprite.move(10.f, 0.f);
-    if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::SHOOT] )))
-    {
-        this->bullets.push_back(Bullet(bulletTexture, this->sprite.getPosition()));
-    }
-
 }
 
-void Player::Update()
+void Player::Combat()
 {
-    this->Movement();
-
-    for (size_t i = 0; i < this->bullets.size(); i++)
+    if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::SHOOT] ))
+        && this->shootTimer >= this->shootTimerMax)
     {
-        this->bullets[i].Update();
+        this->bullets.push_back(Bullet(bulletTexture, this->sprite.getPosition()));
+
+        this->shootTimer = 0; //Reset Timer!
     }
+}
+
+void Player::Update(Vector2u windowBounds) // recibe limites en windowBounds
+{
+    //Update timers
+    if (this->shootTimer < this->shootTimerMax)
+        this->shootTimer++;
+
+    if (this->damageTimer < this->damageTimerMax)
+        this->damageTimer++;
+
+    this->Movement();
+    this->Combat();
 }
 
 void Player::Draw(RenderTarget &target)

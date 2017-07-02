@@ -13,7 +13,6 @@ Bullet::Bullet(Texture *texture, Vector2f position,
 
 Bullet::~Bullet()
 {
-
 }
 
 void Bullet::Movement()
