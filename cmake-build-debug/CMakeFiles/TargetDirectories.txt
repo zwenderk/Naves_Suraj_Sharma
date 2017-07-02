@@ -1,0 +1,3 @@
+H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap01/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap01/cmake-build-debug/CMakeFiles/Cap01.dir
+H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
