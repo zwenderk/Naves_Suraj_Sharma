@@ -53,14 +53,18 @@ void Player::Movement()
         this->sprite.move(10.f, 0.f);
 }
 
-void Player::Combat()
+void Player::Combat() // Si ha pasado el tiempo adecuado crear proyectil
 {
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::SHOOT] ))
         && this->shootTimer >= this->shootTimerMax)
     {
-        this->bullets.push_back(Bullet(bulletTexture, this->sprite.getPosition()));
+        this->bullets.push_back(
+                Bullet(bulletTexture, // textura
+                       this->playerCenter, // posición
+                       Vector2f(1.f, 0.f), 5.f, // dirección, velocidad inicial
+                       35.f, 0.5f)); // velocidad máxima, aceleración
 
-        this->shootTimer = 0; //Reset Timer!
+        this->shootTimer = 0; //Reset Timer! (poner contador al inicio)
     }
 }
 
@@ -73,16 +77,23 @@ void Player::Update(Vector2u windowBounds) // recibe limites en windowBounds
     if (this->damageTimer < this->damageTimerMax)
         this->damageTimer++;
 
+    //Update positions
+    this->playerCenter.x = this->sprite.getPosition().x +
+            this->sprite.getGlobalBounds().width / 2;
+    this->playerCenter.y = this->sprite.getPosition().y +
+            this->sprite.getGlobalBounds().height / 2;
+
+
     this->Movement();
     this->Combat();
 }
 
 void Player::Draw(RenderTarget &target)
 {
-    target.draw(this->sprite);
-
     for (size_t i = 0; i < this->bullets.size(); i++)
     {
         this->bullets[i].Draw(target);
     }
+
+    target.draw(this->sprite);
 }

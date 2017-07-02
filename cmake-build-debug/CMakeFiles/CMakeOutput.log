@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/g++.exe 
@@ -23,37 +23,37 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/a.exe"
+The CXX compiler identification is GNU, found in "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_d7820/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d7820.dir\build.make CMakeFiles/cmTC_d7820.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d7820.dir/testCCompiler.c.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe     -o CMakeFiles\cmTC_d7820.dir\testCCompiler.c.obj   -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap05\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c"
-Linking C executable cmTC_d7820.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d7820.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d7820.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d7820.dir/objects.a @CMakeFiles\cmTC_d7820.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_d7820.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d7820.exe -Wl,--out-implib,libcmTC_d7820.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d7820.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_70739/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_70739.dir\build.make CMakeFiles/cmTC_70739.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70739.dir/testCCompiler.c.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe     -o CMakeFiles\cmTC_70739.dir\testCCompiler.c.obj   -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap06\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c"
+Linking C executable cmTC_70739.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_70739.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_70739.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_70739.dir/objects.a @CMakeFiles\cmTC_70739.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_70739.dir/objects.a -Wl,--no-whole-archive  -o cmTC_70739.exe -Wl,--out-implib,libcmTC_70739.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_70739.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_e4366/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e4366.dir\build.make CMakeFiles/cmTC_e4366.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e4366.dir/CMakeCCompilerABI.c.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe     -o CMakeFiles\cmTC_e4366.dir\CMakeCCompilerABI.c.obj   -c "H:\JetBrains\CLion 2017.1.3\bin\cmake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTC_e4366.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e4366.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e4366.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_e4366.dir/objects.a @CMakeFiles\cmTC_e4366.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_e4366.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e4366.exe -Wl,--out-implib,libcmTC_e4366.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_d5ba4/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d5ba4.dir\build.make CMakeFiles/cmTC_d5ba4.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5ba4.dir/CMakeCCompilerABI.c.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe     -o CMakeFiles\cmTC_d5ba4.dir\CMakeCCompilerABI.c.obj   -c "H:\JetBrains\CLion 2017.1.3\bin\cmake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTC_d5ba4.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d5ba4.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d5ba4.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d5ba4.dir/objects.a @CMakeFiles\cmTC_d5ba4.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_d5ba4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d5ba4.exe -Wl,--out-implib,libcmTC_d5ba4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
 Using built-in specs.
 COLLECT_GCC=H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe
 COLLECT_LTO_WRAPPER=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe
@@ -63,26 +63,26 @@ Thread model: posix
 gcc version 6.3.0 (x86_64-posix-seh-rev1, Built by MinGW-W64 project) 
 COMPILER_PATH=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4366.exe' '-mtune=core2' '-march=nocona'
- H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\ccaqFE2p.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw630/x86_64-630-posix-seh-rt_v5-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_e4366.exe H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_e4366.dir/objects.a --no-whole-archive --out-implib libcmTC_e4366.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4366.exe' '-mtune=core2' '-march=nocona'
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d5ba4.exe' '-mtune=core2' '-march=nocona'
+ H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\cc6b2fzi.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw630/x86_64-630-posix-seh-rt_v5-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_d5ba4.exe H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_d5ba4.dir/objects.a --no-whole-archive --out-implib libcmTC_d5ba4.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d5ba4.exe' '-mtune=core2' '-march=nocona'
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_e4366/fast"]
-  ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e4366.dir\build.make CMakeFiles/cmTC_e4366.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_e4366.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe     -o CMakeFiles\cmTC_e4366.dir\CMakeCCompilerABI.c.obj   -c "H:\JetBrains\CLion 2017.1.3\bin\cmake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTC_e4366.exe]
-  ignore line: ["H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e4366.dir\link.txt --verbose=1]
-  ignore line: ["H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e4366.dir/objects.a]
-  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_e4366.dir/objects.a @CMakeFiles\cmTC_e4366.dir\objects1.rsp]
-  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_e4366.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e4366.exe -Wl,--out-implib,libcmTC_e4366.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ]
+  ignore line: [Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_d5ba4/fast"]
+  ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d5ba4.dir\build.make CMakeFiles/cmTC_d5ba4.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d5ba4.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe     -o CMakeFiles\cmTC_d5ba4.dir\CMakeCCompilerABI.c.obj   -c "H:\JetBrains\CLion 2017.1.3\bin\cmake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTC_d5ba4.exe]
+  ignore line: ["H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d5ba4.dir\link.txt --verbose=1]
+  ignore line: ["H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d5ba4.dir/objects.a]
+  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d5ba4.dir/objects.a @CMakeFiles\cmTC_d5ba4.dir\objects1.rsp]
+  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_d5ba4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d5ba4.exe -Wl,--out-implib,libcmTC_d5ba4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe]
@@ -99,13 +99,13 @@ Parsed C implicit link information from above output:
   ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib/]
   ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4366.exe' '-mtune=core2' '-march=nocona']
-  link line: [ H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\ccaqFE2p.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw630/x86_64-630-posix-seh-rt_v5-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_e4366.exe H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_e4366.dir/objects.a --no-whole-archive --out-implib libcmTC_e4366.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d5ba4.exe' '-mtune=core2' '-march=nocona']
+  link line: [ H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\cc6b2fzi.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw630/x86_64-630-posix-seh-rt_v5-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_d5ba4.exe H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_d5ba4.dir/objects.a --no-whole-archive --out-implib libcmTC_d5ba4.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o]
     arg [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\ccaqFE2p.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\cc6b2fzi.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -129,7 +129,7 @@ Parsed C implicit link information from above output:
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_e4366.exe] ==> ignore
+    arg [cmTC_d5ba4.exe] ==> ignore
     arg [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o] ==> ignore
     arg [-LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0] ==> dir [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0]
@@ -139,10 +139,10 @@ Parsed C implicit link information from above output:
     arg [-LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib] ==> dir [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib]
     arg [-LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..] ==> dir [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_e4366.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_d5ba4.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_e4366.dll.a] ==> ignore
+    arg [libcmTC_d5ba4.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -184,19 +184,19 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_54603/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_54603.dir\build.make CMakeFiles/cmTC_54603.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_54603.dir/feature_tests.c.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe    -std=c11 -o CMakeFiles\cmTC_54603.dir\feature_tests.c.obj   -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap05\cmake-build-debug\CMakeFiles\feature_tests.c"
-Linking C executable cmTC_54603.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_54603.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_54603.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_54603.dir/objects.a @CMakeFiles\cmTC_54603.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_54603.dir/objects.a -Wl,--no-whole-archive  -o cmTC_54603.exe -Wl,--out-implib,libcmTC_54603.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_54603.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_44c8d/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_44c8d.dir\build.make CMakeFiles/cmTC_44c8d.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_44c8d.dir/feature_tests.c.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe    -std=c11 -o CMakeFiles\cmTC_44c8d.dir\feature_tests.c.obj   -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap06\cmake-build-debug\CMakeFiles\feature_tests.c"
+Linking C executable cmTC_44c8d.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_44c8d.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_44c8d.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_44c8d.dir/objects.a @CMakeFiles\cmTC_44c8d.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_44c8d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_44c8d.exe -Wl,--out-implib,libcmTC_44c8d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_44c8d.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -206,19 +206,19 @@ mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Develo
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_0d6be/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_0d6be.dir\build.make CMakeFiles/cmTC_0d6be.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0d6be.dir/feature_tests.c.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe    -std=c99 -o CMakeFiles\cmTC_0d6be.dir\feature_tests.c.obj   -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap05\cmake-build-debug\CMakeFiles\feature_tests.c"
-Linking C executable cmTC_0d6be.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0d6be.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0d6be.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_0d6be.dir/objects.a @CMakeFiles\cmTC_0d6be.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_0d6be.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0d6be.exe -Wl,--out-implib,libcmTC_0d6be.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0d6be.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_7642a/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_7642a.dir\build.make CMakeFiles/cmTC_7642a.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7642a.dir/feature_tests.c.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe    -std=c99 -o CMakeFiles\cmTC_7642a.dir\feature_tests.c.obj   -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap06\cmake-build-debug\CMakeFiles\feature_tests.c"
+Linking C executable cmTC_7642a.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7642a.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_7642a.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_7642a.dir/objects.a @CMakeFiles\cmTC_7642a.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_7642a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7642a.exe -Wl,--out-implib,libcmTC_7642a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7642a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -228,19 +228,19 @@ mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Develo
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_b7af0/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_b7af0.dir\build.make CMakeFiles/cmTC_b7af0.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b7af0.dir/feature_tests.c.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe    -std=c90 -o CMakeFiles\cmTC_b7af0.dir\feature_tests.c.obj   -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap05\cmake-build-debug\CMakeFiles\feature_tests.c"
-Linking C executable cmTC_b7af0.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b7af0.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b7af0.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_b7af0.dir/objects.a @CMakeFiles\cmTC_b7af0.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_b7af0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b7af0.exe -Wl,--out-implib,libcmTC_b7af0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b7af0.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_222fe/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_222fe.dir\build.make CMakeFiles/cmTC_222fe.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_222fe.dir/feature_tests.c.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe    -std=c90 -o CMakeFiles\cmTC_222fe.dir\feature_tests.c.obj   -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap06\cmake-build-debug\CMakeFiles\feature_tests.c"
+Linking C executable cmTC_222fe.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_222fe.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_222fe.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_222fe.dir/objects.a @CMakeFiles\cmTC_222fe.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_222fe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_222fe.exe -Wl,--out-implib,libcmTC_222fe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_222fe.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -248,34 +248,34 @@ mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Develo
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_43956/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_43956.dir\build.make CMakeFiles/cmTC_43956.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_43956.dir/testCXXCompiler.cxx.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -o CMakeFiles\cmTC_43956.dir\testCXXCompiler.cxx.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap05\cmake-build-debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
-Linking CXX executable cmTC_43956.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_43956.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_43956.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_43956.dir/objects.a @CMakeFiles\cmTC_43956.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_43956.dir/objects.a -Wl,--no-whole-archive  -o cmTC_43956.exe -Wl,--out-implib,libcmTC_43956.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_43956.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_ebee5/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_ebee5.dir\build.make CMakeFiles/cmTC_ebee5.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ebee5.dir/testCXXCompiler.cxx.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -o CMakeFiles\cmTC_ebee5.dir\testCXXCompiler.cxx.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap06\cmake-build-debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+Linking CXX executable cmTC_ebee5.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ebee5.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ebee5.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_ebee5.dir/objects.a @CMakeFiles\cmTC_ebee5.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_ebee5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ebee5.exe -Wl,--out-implib,libcmTC_ebee5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ebee5.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_aa335/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_aa335.dir\build.make CMakeFiles/cmTC_aa335.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_aa335.dir/CMakeCXXCompilerABI.cpp.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -o CMakeFiles\cmTC_aa335.dir\CMakeCXXCompilerABI.cpp.obj -c "H:\JetBrains\CLion 2017.1.3\bin\cmake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
-Linking CXX executable cmTC_aa335.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_aa335.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_aa335.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_aa335.dir/objects.a @CMakeFiles\cmTC_aa335.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_aa335.dir/objects.a -Wl,--no-whole-archive  -o cmTC_aa335.exe -Wl,--out-implib,libcmTC_aa335.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_da1c5/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_da1c5.dir\build.make CMakeFiles/cmTC_da1c5.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_da1c5.dir/CMakeCXXCompilerABI.cpp.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -o CMakeFiles\cmTC_da1c5.dir\CMakeCXXCompilerABI.cpp.obj -c "H:\JetBrains\CLion 2017.1.3\bin\cmake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTC_da1c5.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_da1c5.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_da1c5.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_da1c5.dir/objects.a @CMakeFiles\cmTC_da1c5.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_da1c5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_da1c5.exe -Wl,--out-implib,libcmTC_da1c5.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
 Using built-in specs.
 COLLECT_GCC=H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe
 COLLECT_LTO_WRAPPER=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe
@@ -285,26 +285,26 @@ Thread model: posix
 gcc version 6.3.0 (x86_64-posix-seh-rev1, Built by MinGW-W64 project) 
 COMPILER_PATH=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/;H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aa335.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona'
- H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\ccaDi4kh.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw630/x86_64-630-posix-seh-rt_v5-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_aa335.exe H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_aa335.dir/objects.a --no-whole-archive --out-implib libcmTC_aa335.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aa335.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona'
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_da1c5.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona'
+ H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\ccU6Hjxb.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw630/x86_64-630-posix-seh-rt_v5-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_da1c5.exe H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_da1c5.dir/objects.a --no-whole-archive --out-implib libcmTC_da1c5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_da1c5.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona'
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_aa335/fast"]
-  ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_aa335.dir\build.make CMakeFiles/cmTC_aa335.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_aa335.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -o CMakeFiles\cmTC_aa335.dir\CMakeCXXCompilerABI.cpp.obj -c "H:\JetBrains\CLion 2017.1.3\bin\cmake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"]
-  ignore line: [Linking CXX executable cmTC_aa335.exe]
-  ignore line: ["H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_aa335.dir\link.txt --verbose=1]
-  ignore line: ["H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_aa335.dir/objects.a]
-  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_aa335.dir/objects.a @CMakeFiles\cmTC_aa335.dir\objects1.rsp]
-  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_aa335.dir/objects.a -Wl,--no-whole-archive  -o cmTC_aa335.exe -Wl,--out-implib,libcmTC_aa335.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ]
+  ignore line: [Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_da1c5/fast"]
+  ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_da1c5.dir\build.make CMakeFiles/cmTC_da1c5.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_da1c5.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -o CMakeFiles\cmTC_da1c5.dir\CMakeCXXCompilerABI.cpp.obj -c "H:\JetBrains\CLion 2017.1.3\bin\cmake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTC_da1c5.exe]
+  ignore line: ["H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_da1c5.dir\link.txt --verbose=1]
+  ignore line: ["H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_da1c5.dir/objects.a]
+  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_da1c5.dir/objects.a @CMakeFiles\cmTC_da1c5.dir\objects1.rsp]
+  ignore line: [H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_da1c5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_da1c5.exe -Wl,--out-implib,libcmTC_da1c5.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe]
@@ -321,13 +321,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib/]
   ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aa335.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona']
-  link line: [ H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\ccaDi4kh.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw630/x86_64-630-posix-seh-rt_v5-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_aa335.exe H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_aa335.dir/objects.a --no-whole-archive --out-implib libcmTC_aa335.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_da1c5.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona']
+  link line: [ H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe -plugin H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\ccU6Hjxb.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw630/x86_64-630-posix-seh-rt_v5-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_da1c5.exe H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0 -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib -LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_da1c5.dir/objects.a --no-whole-archive --out-implib libcmTC_da1c5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtend.o]
     arg [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/6.3.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\ccaDi4kh.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\SATURN~1\AppData\Local\Temp\ccU6Hjxb.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -351,7 +351,7 @@ Parsed CXX implicit link information from above output:
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_aa335.exe] ==> ignore
+    arg [cmTC_da1c5.exe] ==> ignore
     arg [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/crtbegin.o] ==> ignore
     arg [-LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0] ==> dir [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0]
@@ -361,10 +361,10 @@ Parsed CXX implicit link information from above output:
     arg [-LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib] ==> dir [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/lib]
     arg [-LH:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..] ==> dir [H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.3.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_aa335.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_da1c5.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_aa335.dll.a] ==> ignore
+    arg [libcmTC_da1c5.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -407,19 +407,19 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_f4ea0/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f4ea0.dir\build.make CMakeFiles/cmTC_f4ea0.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f4ea0.dir/feature_tests.cxx.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe     -std=c++14 -o CMakeFiles\cmTC_f4ea0.dir\feature_tests.cxx.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap05\cmake-build-debug\CMakeFiles\feature_tests.cxx"
-Linking CXX executable cmTC_f4ea0.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f4ea0.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_f4ea0.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_f4ea0.dir/objects.a @CMakeFiles\cmTC_f4ea0.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_f4ea0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f4ea0.exe -Wl,--out-implib,libcmTC_f4ea0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f4ea0.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_e88b0/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_e88b0.dir\build.make CMakeFiles/cmTC_e88b0.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e88b0.dir/feature_tests.cxx.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe     -std=c++14 -o CMakeFiles\cmTC_e88b0.dir\feature_tests.cxx.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap06\cmake-build-debug\CMakeFiles\feature_tests.cxx"
+Linking CXX executable cmTC_e88b0.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e88b0.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e88b0.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_e88b0.dir/objects.a @CMakeFiles\cmTC_e88b0.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_e88b0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e88b0.exe -Wl,--out-implib,libcmTC_e88b0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e88b0.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -482,19 +482,19 @@ mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Develo
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_bed0d/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_bed0d.dir\build.make CMakeFiles/cmTC_bed0d.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bed0d.dir/feature_tests.cxx.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe     -std=c++11 -o CMakeFiles\cmTC_bed0d.dir\feature_tests.cxx.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap05\cmake-build-debug\CMakeFiles\feature_tests.cxx"
-Linking CXX executable cmTC_bed0d.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_bed0d.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_bed0d.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_bed0d.dir/objects.a @CMakeFiles\cmTC_bed0d.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_bed0d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_bed0d.exe -Wl,--out-implib,libcmTC_bed0d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bed0d.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_58b71/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_58b71.dir\build.make CMakeFiles/cmTC_58b71.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_58b71.dir/feature_tests.cxx.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe     -std=c++11 -o CMakeFiles\cmTC_58b71.dir\feature_tests.cxx.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap06\cmake-build-debug\CMakeFiles\feature_tests.cxx"
+Linking CXX executable cmTC_58b71.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_58b71.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_58b71.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_58b71.dir/objects.a @CMakeFiles\cmTC_58b71.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_58b71.dir/objects.a -Wl,--no-whole-archive  -o cmTC_58b71.exe -Wl,--out-implib,libcmTC_58b71.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_58b71.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -557,19 +557,19 @@ mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Develo
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_f0a93/fast"
-H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f0a93.dir\build.make CMakeFiles/cmTC_f0a93.dir/build
-mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f0a93.dir/feature_tests.cxx.obj
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe     -std=c++98 -o CMakeFiles\cmTC_f0a93.dir\feature_tests.cxx.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap05\cmake-build-debug\CMakeFiles\feature_tests.cxx"
-Linking CXX executable cmTC_f0a93.exe
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f0a93.dir\link.txt --verbose=1
-"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_f0a93.dir/objects.a
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_f0a93.dir/objects.a @CMakeFiles\cmTC_f0a93.dir\objects1.rsp
-H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_f0a93.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f0a93.exe -Wl,--out-implib,libcmTC_f0a93.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f0a93.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "cmTC_a3e5c/fast"
+H:/mingw-w64/x86_64-6.3.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a3e5c.dir\build.make CMakeFiles/cmTC_a3e5c.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a3e5c.dir/feature_tests.cxx.obj
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe     -std=c++98 -o CMakeFiles\cmTC_a3e5c.dir\feature_tests.cxx.obj -c "H:\ProyectosCLion\SFML - C++ Game Development(Suraj Sharma)\Cap06\cmake-build-debug\CMakeFiles\feature_tests.cxx"
+Linking CXX executable cmTC_a3e5c.exe
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a3e5c.dir\link.txt --verbose=1
+"H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a3e5c.dir/objects.a
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\ar.exe cr CMakeFiles\cmTC_a3e5c.dir/objects.a @CMakeFiles\cmTC_a3e5c.dir\objects1.rsp
+H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_a3e5c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a3e5c.exe -Wl,--out-implib,libcmTC_a3e5c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a3e5c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

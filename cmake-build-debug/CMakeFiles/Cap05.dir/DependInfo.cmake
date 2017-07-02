@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/Bullet.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/Cap05.dir/Bullet.cpp.obj"
-  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/Game.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/Cap05.dir/Game.cpp.obj"
-  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/Player.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/Cap05.dir/Player.cpp.obj"
-  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/main.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap05/cmake-build-debug/CMakeFiles/Cap05.dir/main.cpp.obj"
+  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/Bullet.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/Cap05.dir/Bullet.cpp.obj"
+  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/Game.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/Cap05.dir/Game.cpp.obj"
+  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/Player.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/Cap05.dir/Player.cpp.obj"
+  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/main.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap06/cmake-build-debug/CMakeFiles/Cap05.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
