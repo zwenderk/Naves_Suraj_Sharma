@@ -10,12 +10,12 @@ Enemy::Enemy(Texture *texture, Vector2u windowBounds,
     this->texture = texture;
     this->sprite.setTexture(*this->texture);
     this->sprite.setScale(scale);
-    this->windowBouns = windowBounds;
+    this->windowBounds = windowBounds;
 
     this->direction = direction;
     // Posición de enemigo en la derecha y aleatoriamente arriba y abajo
-    this->sprite.setPosition(windowBounds.x,
-                            (rand() % windowBounds.y) - this->sprite.getGlobalBounds().height);
+    this->sprite.setPosition(this->windowBounds.x,
+                            (rand() % this->windowBounds.y) - this->sprite.getGlobalBounds().height);
 
     this->type = type;
 
