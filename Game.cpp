@@ -6,6 +6,7 @@ Game::Game(RenderWindow *window)
 {
     this->window = window;
     this->window->setFramerateLimit(60);
+    this->dtMultiplier = 62.5f;
 
     //Inicializa fonts
     this->font.loadFromFile("../Fonts/Dosis-Light.ttf");
@@ -112,13 +113,13 @@ void Game::UpdateUI() // Actualiza letreros
     }
 }
 
-void Game::Update()
+void Game::Update(const float &dt)
 {
     if (this->playersAlive > 0) // Si hay players
     {
         //Update timers
         if (this->enemySpawnTimer < this->enemySpawnTimerMax)
-            this->enemySpawnTimer++;
+            this->enemySpawnTimer += 1.f * dt * this->dtMultiplier;
 
         //Spawn enemies (lanza enemigo si ha pasado el tiempo adecuado)
         if (this->enemySpawnTimer >= this->enemySpawnTimerMax)
@@ -137,12 +138,12 @@ void Game::Update()
             if (this->players[i].isAlive())
             {
                 //UPDATE PLAYERS
-                this->players[i].Update(this->window->getSize());
+                this->players[i].Update(this->window->getSize(), dt);
 
                 //Bullets update
                 for (size_t k = 0; k < this->players[i].getBullets().size(); k++)
                 {
-                    this->players[i].getBullets()[k].Update();
+                    this->players[i].getBullets()[k].Update(dt);
 
                     // Prueba de colisión de enemigo y proyectil
                     for (size_t j = 0; j < this->enemies.size(); j++)
@@ -176,7 +177,7 @@ void Game::Update()
         //Update enemies
         for (size_t i = 0; i < this->enemies.size(); i++)
         {
-            this->enemies[i].Update();
+            this->enemies[i].Update(dt);
 
             for (size_t k = 0; k < this->players.size(); k++) // Para todos los players
             {

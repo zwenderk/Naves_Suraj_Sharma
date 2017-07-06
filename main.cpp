@@ -2,9 +2,15 @@
 
 int main()
 {
+    srand(time(NULL));
+
     // Crea ventana
     RenderWindow window(VideoMode(1920, 1080), "Wingman Game", Style::Default);
-    window.setFramerateLimit(60); // Limita frames por segundo
+
+    Clock clock;
+    float dt = 0.f;
+
+    //window.setFramerateLimit(60); // Limita frames por segundo
 
     Game game(&window); // Crea objeto game y le envia el objeto window
 
@@ -20,8 +26,10 @@ int main()
                 window.close();
         }
 
+        dt = clock.restart().asSeconds();
+        std::cout << dt << "\n";
 
-        game.Update();
+        game.Update(dt);
         game.Draw();
     }
     return 0;

@@ -7,6 +7,7 @@ class Game
 {
 private:
     RenderWindow *window;
+    float dtMultiplier;
 
     // Texto
     Font font;
@@ -22,8 +23,8 @@ private:
     // Enemigos
     std::vector<Enemy> enemies;
     std::vector<Enemy> enemiesSaved;
-    int enemySpawnTimer; // Temporizador de salida de enemigos
-    int enemySpawnTimerMax;
+    float enemySpawnTimer; // Temporizador de salida de enemigos
+    float enemySpawnTimerMax;
 
     // Texturas
     std::vector<Texture> textures;
@@ -40,7 +41,7 @@ public:
     // Funciones
     void InitUI();   // Inicializa letreros
     void UpdateUI(); // Actualiza letreros
-    void Update();
+    void Update(const float &dt);
     void DrawUI();   // Dibuja letreros
     void Draw();
 };

@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="Cap12"/>
+		<Option title="Cap15"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -17,8 +17,8 @@
 					<DistClean command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Cap12">
-				<Option output="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Cap12.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="Cap15">
+				<Option output="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Cap15.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -33,14 +33,14 @@
 					<Add directory="H:/MingW - i686-6.1.0-release-posix-dwarf-rt_v5-rev0.7z/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cap12"/>
+					<Build command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cap15"/>
 					<CompileFile command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Cap12/fast">
-				<Option output="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Cap12.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="Cap15/fast">
+				<Option output="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Cap15.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -55,7 +55,7 @@
 					<Add directory="H:/MingW - i686-6.1.0-release-posix-dwarf-rt_v5-rev0.7z/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cap12/fast"/>
+					<Build command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cap15/fast"/>
 					<CompileFile command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="H:/MINGW-~1.7Z/mingw32/bin/mingw32-make.exe -f &quot;H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -83,31 +83,31 @@
 			</Target>
 		</Build>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Bullet.cpp">
-			<Option target="Cap12"/>
+			<Option target="Cap15"/>
 		</Unit>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Bullet.h">
-			<Option target="Cap12"/>
+			<Option target="Cap15"/>
 		</Unit>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Enemy.cpp">
-			<Option target="Cap12"/>
+			<Option target="Cap15"/>
 		</Unit>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Enemy.h">
-			<Option target="Cap12"/>
+			<Option target="Cap15"/>
 		</Unit>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Game.cpp">
-			<Option target="Cap12"/>
+			<Option target="Cap15"/>
 		</Unit>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Game.h">
-			<Option target="Cap12"/>
+			<Option target="Cap15"/>
 		</Unit>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Player.cpp">
-			<Option target="Cap12"/>
+			<Option target="Cap15"/>
 		</Unit>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Player.h">
-			<Option target="Cap12"/>
+			<Option target="Cap15"/>
 		</Unit>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/main.cpp">
-			<Option target="Cap12"/>
+			<Option target="Cap15"/>
 		</Unit>
 		<Unit filename="H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

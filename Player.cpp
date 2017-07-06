@@ -15,6 +15,8 @@ Player::Player(
          damage(1), damageMax(2),
          score(0)
 {
+    // Dt (delta time)
+    this->dtMultiplier = 62.5f;
 
     // Actualiza posiciones
     this->playerCenter.x = this->sprite.getPosition().x +
@@ -40,9 +42,9 @@ Player::Player(
             this->playerCenter.y);
 
     // Temporizadores
-    this->shootTimerMax = 25;
+    this->shootTimerMax = 25.f;
     this->shootTimer = this->shootTimerMax;
-    this->damageTimer = 10;
+    this->damageTimer = 10.f;
     this->damageTimer = this->damageTimer;
 
     // Controles
@@ -74,7 +76,7 @@ Player::~Player()
 {
 }
 
-void Player::UpdateAccesories()
+void Player::UpdateAccesories(const float &dt)
 {
     // Establece la posición del cañon para que siga a la nave
     this->mainGunSprite.setPosition(
@@ -85,7 +87,8 @@ void Player::UpdateAccesories()
     // Anima el cañon principal y lo corrige despues de disparar
     if (this->mainGunSprite.getPosition().x < this->playerCenter.x + 20.f)
     {
-        this->mainGunSprite.move(2.f + this->currentVelocity.x, 0.f);
+        this->mainGunSprite.move(2.f * dt * this->dtMultiplier
+           + this->currentVelocity.x * dt * this->dtMultiplier, 0.f);
     }
 
     if (this->mainGunSprite.getPosition().x > this->playerCenter.x + 20.f)
@@ -96,7 +99,7 @@ void Player::UpdateAccesories()
     }
 }
 
-void Player::Movement()
+void Player::Movement(const float &dt)
 {
     //UP
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::UP] )))
@@ -105,7 +108,8 @@ void Player::Movement()
         this->direction.y = -1.f;
 
         if (this->currentVelocity.y > -this->maxVelocity && this->direction.y < 0)
-            this->currentVelocity.y += this->direction.y * this->acceleration;
+            this->currentVelocity.y += this->direction.y * this->acceleration
+            * dt * this->dtMultiplier;
     }
 
     //DOWN
@@ -115,7 +119,8 @@ void Player::Movement()
         this->direction.y = 1.f;
 
         if (this->currentVelocity.y < this->maxVelocity && this->direction.y > 0)
-            this->currentVelocity.y += this->direction.y * this->acceleration;
+            this->currentVelocity.y += this->direction.y * this->acceleration
+            * dt * this->dtMultiplier;
     }
 
     //LEFT
@@ -125,7 +130,8 @@ void Player::Movement()
         this->direction.y = 0.f;
 
         if (this->currentVelocity.x > -this->maxVelocity && this->direction.x < 0)
-            this->currentVelocity.x += this->direction.x * this->acceleration;
+            this->currentVelocity.x += this->direction.x * this->acceleration
+            * dt * this->dtMultiplier;
     }
 
     //RIGHT
@@ -135,13 +141,15 @@ void Player::Movement()
         this->direction.y = 0.f;
 
         if (this->currentVelocity.x < this->maxVelocity && this->direction.x > 0)
-            this->currentVelocity.x += this->direction.x * this->acceleration;
+            this->currentVelocity.x += this->direction.x * this->acceleration
+            * dt * this->dtMultiplier;
     }
 
     //Drag force (para el player al soltar)
     if (this->currentVelocity.x > 0)
     {
-        this->currentVelocity.x -= this->stabilizerForce;
+        this->currentVelocity.x -= this->stabilizerForce
+            * dt * this->dtMultiplier;
 
         if (this->currentVelocity.x < 0)
             this->currentVelocity.x = 0;
@@ -149,7 +157,8 @@ void Player::Movement()
 
     else if (this->currentVelocity.x < 0)
     {
-        this->currentVelocity.x += this->stabilizerForce;
+        this->currentVelocity.x += this->stabilizerForce
+            * dt * this->dtMultiplier;
 
         if (this->currentVelocity.x > 0)
             this->currentVelocity.x = 0;
@@ -157,7 +166,8 @@ void Player::Movement()
     //------------- Y ------------
     if (this->currentVelocity.y > 0)
     {
-        this->currentVelocity.y -= this->stabilizerForce;
+        this->currentVelocity.y -= this->stabilizerForce
+            * dt * this->dtMultiplier;
 
         if (this->currentVelocity.y < 0)
             this->currentVelocity.y = 0;
@@ -165,14 +175,16 @@ void Player::Movement()
 
     else if (this->currentVelocity.y < 0)
     {
-        this->currentVelocity.y += this->stabilizerForce;
+        this->currentVelocity.y += this->stabilizerForce
+            * dt * this->dtMultiplier;
 
         if (this->currentVelocity.y > 0)
             this->currentVelocity.y = 0;
     }
 
     // Movimiento final
-    this->sprite.move(this->currentVelocity.x, this->currentVelocity.y);
+    this->sprite.move(this->currentVelocity.x * dt * this->dtMultiplier,
+                      this->currentVelocity.y * dt * this->dtMultiplier);
 
     // Actualiza posiciones
     this->playerCenter.x = this->sprite.getPosition().x +
@@ -181,7 +193,7 @@ void Player::Movement()
                            this->sprite.getGlobalBounds().height / 2;
 }
 
-void Player::Combat()
+void Player::Combat(const float &dt)
 {   // Si se ha presionado tecla de disparo y ha pasado el tiempo adecuado
     // crear proyectil y reiniciar contador de tiempo
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::SHOOT] ))
@@ -247,21 +259,18 @@ void Player::Combat()
     }
 }
 
-void Player::Update(Vector2u windowBounds) // recibe limites en windowBounds
+void Player::Update(Vector2u windowBounds, const float &dt) // recibe limites en windowBounds
 {
     //Update timers
     if (this->shootTimer < this->shootTimerMax)
-        this->shootTimer++;
+        this->shootTimer += 1.f * dt *this->dtMultiplier;
 
     if (this->damageTimer < this->damageTimerMax)
-        this->damageTimer++;
+        this->damageTimer += 1.f * dt *this->dtMultiplier;
 
-
-
-
-    this->Movement();
-    this->UpdateAccesories(); // Actualiza cañon
-    this->Combat();
+    this->Movement(dt);
+    this->UpdateAccesories(dt); // Actualiza cañon
+    this->Combat(dt);
 }
 
 void Player::Draw(RenderTarget &target)
