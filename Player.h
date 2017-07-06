@@ -61,6 +61,7 @@ public:
     inline std::vector<Bullet>& getBullets() { return this->bullets;}
     inline const Vector2f& getPosition()const { return this->sprite.getPosition();}
     inline const String getHpAsString()const { return std::to_string(this->hp) + "/" + std::to_string(this->hpMax);}
+    inline const int getDamage()const{ return rand() % this->damageMax + this->damage;}
 
     //Funciones
     void UpdateAccesories();
