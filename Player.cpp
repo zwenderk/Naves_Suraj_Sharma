@@ -3,6 +3,7 @@
 unsigned Player::players = 0;
 
 enum controls {UP = 0, DOWN, LEFT, RIGHT, SHOOT};
+enum weapons {LASER = 0, MISSILE01, MISSILE02}; // Proyectiles
 
 Player::Player(std::vector<Texture> &textures,
                int UP, int DOWN,
@@ -14,34 +15,54 @@ Player::Player(std::vector<Texture> &textures,
          score(0)
 {
 
-    //this->sprite.setTexture(textures[1]); // Textura del proyectil
-    //this->sprite.setScale(0.13f, 0.13f); // Reduce el tamaño del sprite
+    // Actualiza posiciones
+    this->playerCenter.x = this->sprite.getPosition().x +
+                           this->sprite.getGlobalBounds().width / 2;
+    this->playerCenter.y = this->sprite.getPosition().y +
+                           this->sprite.getGlobalBounds().height / 2;
 
+    // Texturas y sprites
     this->sprite.setTexture(textures[0]); // Textura de la nave
     this->sprite.setScale(0.13f, 0.13f);
 
-    this->bulletTexture = &textures[1]; // Textura del proyectil
+    this->laserTexture = &textures[1]; // Textura del proyectil laser
+    this->missile01Texture = &textures[2]; // Textura del proyectil 01
 
-    this->mainGunSprite.setTexture(textures[2]); // Textura del cañon
+    this->mainGunSprite.setTexture(textures[3]); // Textura del cañon
     this->mainGunSprite.setOrigin( // Situa el cañon en el centro de la nave
             this->mainGunSprite.getGlobalBounds().width / 2,
             this->mainGunSprite.getGlobalBounds().height / 2);
     this->mainGunSprite.rotate(90); // Rota el cañon 90 grados
 
+    this->mainGunSprite.setPosition(
+            this->playerCenter.x + 20.f, // Situar el cañon en el centro de la nave + 20 en x
+            this->playerCenter.y);
+
+    // Temporizadores
     this->shootTimerMax = 25;
     this->shootTimer = this->shootTimerMax;
     this->damageTimer = 10;
     this->damageTimer = this->damageTimer;
 
+    // Controles
     this->controls[controls::UP] = UP;
     this->controls[controls::DOWN] = DOWN;
     this->controls[controls::LEFT] = LEFT;
     this->controls[controls::RIGHT] = RIGHT;
     this->controls[controls::SHOOT] = SHOOT;
 
+    // Velocidad y aceleración
     this->maxVelocity = 25.f;
     this->acceleration = 0.8f;
     this->stabilizerForce = 0.4f;
+
+    // Armas
+    this->currentWeapon = LASER;
+
+    // Actualizaciones
+    this->mainGunLevel = 0;
+    this->dualMissiles01 = false;
+    this->dualMissiles02 = false;
 
     // Añade número de players, playerNr es el número de jugador
     this->playerNr = Player::players;
@@ -54,13 +75,13 @@ Player::~Player()
 
 void Player::UpdateAccesories()
 {
-    // Establecer la posición del cañon para que siga a la nave
+    // Establece la posición del cañon para que siga a la nave
     this->mainGunSprite.setPosition(
             this->mainGunSprite.getPosition().x, // El cañon se mueve en la nave
             this->playerCenter.y); // Situa cañon en la nave
 
 
-    // Animar el cañon principal y lo corrige despues de disparar
+    // Anima el cañon principal y lo corrige despues de disparar
     if (this->mainGunSprite.getPosition().x < this->playerCenter.x + 20.f)
     {
         this->mainGunSprite.move(2.f + this->currentVelocity.x, 0.f);
@@ -72,8 +93,6 @@ void Player::UpdateAccesories()
                 this->playerCenter.x + 20.f, // Situar el cañon en el centro de la nave + 20 en x
                 this->playerCenter.y);
     }
-
-
 }
 
 void Player::Movement()
@@ -154,7 +173,7 @@ void Player::Movement()
     // Movimiento final
     this->sprite.move(this->currentVelocity.x, this->currentVelocity.y);
 
-    //Update positions
+    // Actualiza posiciones
     this->playerCenter.x = this->sprite.getPosition().x +
                            this->sprite.getGlobalBounds().width / 2;
     this->playerCenter.y = this->sprite.getPosition().y +
@@ -166,16 +185,61 @@ void Player::Combat()
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::SHOOT] ))
         && this->shootTimer >= this->shootTimerMax)
     {
-        this->bullets.push_back(
-                Bullet(bulletTexture, // textura
-                       Vector2f(this->playerCenter.x + 50.f, this->playerCenter.y), // posición inicial del proyectil
-                       Vector2f(1.f, 0.f), 2.f, // dirección, velocidad inicial
-                       50.f, 1.f)); // velocidad máxima, aceleración
+        if (this->currentWeapon == LASER)
+        {
+            // Crea proyectil laser
+            if (this->mainGunLevel == 0)
+            {
+                this->bullets.push_back(
+                        Bullet(laserTexture, // textura
+                               Vector2f(this->playerCenter.x + 50.f,
+                                        this->playerCenter.y), // posición inicial del proyectil
+                               Vector2f(0.2f, 0.2f), // escala
+                               Vector2f(1.f, 0.f),   // dirección,
+                               20.f, 60.f, 5.f));    // velocidad inicial, velocidad máxima, aceleración
+            }
+            else if (this->mainGunLevel == 1)
+            {
 
-        // Animar cañon
-        this->mainGunSprite.move(-30.f, 0.f);
+            }
+            else if (this->mainGunLevel == 2)
+            {
 
+            }
+            // Animar cañon
+            this->mainGunSprite.move(-30.f, 0.f);
 
+        }
+        else if (this->currentWeapon == MISSILE01) // Lanza dos proyectiles
+        {
+            // Crea proyectil superior
+
+            this->bullets.push_back(
+                    Bullet(missile01Texture, // textura proyectil 01
+                           Vector2f(this->playerCenter.x,
+                                    this->playerCenter.y - 25.f), // posición inicial del proyectil
+                           Vector2f(0.05f, 0.05f), // escala
+                           Vector2f(1.f, 0.f),     // dirección,
+                           2.f, 50.f, 1.f));       // velocidad inicial, velocidad máxima, aceleración
+
+            if (this->dualMissiles01)
+            {
+                // Crea proyectil inferior
+                this->bullets.push_back(
+                        Bullet(missile01Texture, // textura proyectil 01
+                               Vector2f(this->playerCenter.x,
+                                        this->playerCenter.y + 25.f), // posición inicial del proyectil
+                               Vector2f(0.05f, 0.05f), // escala
+                               Vector2f(1.f, 0.f),     // dirección,
+                               2.f, 50.f, 1.f));       // velocidad inicial, velocidad máxima, aceleración
+            }
+        }
+        else if (this->currentWeapon == MISSILE02)
+        {
+            if (this->dualMissiles02)
+            {
+            }
+        }
 
         this->shootTimer = 0; //Reset Timer! (poner contador al inicio)
     }

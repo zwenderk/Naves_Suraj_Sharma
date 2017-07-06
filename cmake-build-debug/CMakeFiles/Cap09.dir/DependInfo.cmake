@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09/Bullet.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09/cmake-build-debug/CMakeFiles/Cap09.dir/Bullet.cpp.obj"
-  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09/Game.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09/cmake-build-debug/CMakeFiles/Cap09.dir/Game.cpp.obj"
-  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09/Player.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09/cmake-build-debug/CMakeFiles/Cap09.dir/Player.cpp.obj"
-  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09/main.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09/cmake-build-debug/CMakeFiles/Cap09.dir/main.cpp.obj"
+  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Bullet.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/CMakeFiles/Cap09.dir/Bullet.cpp.obj"
+  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Game.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/CMakeFiles/Cap09.dir/Game.cpp.obj"
+  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/Player.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/CMakeFiles/Cap09.dir/Player.cpp.obj"
+  "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/main.cpp" "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/CMakeFiles/Cap09.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "h:/ProyectosCLion/__LIBRERIAS__/SFML-2.4.1/include"
+  "h:/ProyectosCLion/__LIBRERIAS__/SFML-2.4.2/include"
   )
 
 # Targets to which this target links.

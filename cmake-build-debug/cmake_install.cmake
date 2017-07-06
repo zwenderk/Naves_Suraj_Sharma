@@ -1,8 +1,8 @@
-# Install script for directory: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09
+# Install script for directory: H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Cap08")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Cap09")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Cap09/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

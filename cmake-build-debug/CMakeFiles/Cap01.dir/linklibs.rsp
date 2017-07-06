@@ -1,1 +1,0 @@
- -Lh:/ProyectosCLion/__LIBRERIAS__/SFML-2.4.1/lib -lsfml-main-d -lsfml-window-d -lsfml-graphics-d -lsfml-audio-d -lsfml-network-d -lsfml-system-d -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

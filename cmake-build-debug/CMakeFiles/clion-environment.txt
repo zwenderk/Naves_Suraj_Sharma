@@ -1,3 +1,3 @@
-ToolSet: w64 5.0@H:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64
+ToolSet: w64 5.0@H:\MingW - i686-6.1.0-release-posix-dwarf-rt_v5-rev0.7z\mingw32
 Options: 
 CMake: 3.7.2@H:\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe
