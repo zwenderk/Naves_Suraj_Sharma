@@ -61,22 +61,22 @@ void Game::InitUI() // Inicializa letreros
 {
     Text tempText;
 
-    for (size_t i = 0; i < this->players.size(); i++)
-    {
-        //Follow Text Init (texto en el player)
-        this->followPlayerText.setFont(font);
-        this->followPlayerText.setCharacterSize(14);
-        //tempText.setColor(Color::White); // Obsoleto
-        this->followPlayerText.setOutlineColor(Color::White);
-        this->followPlayerText.setString(std::to_string(i));
+    //Follow Text Init (texto en el player)
+    this->followPlayerText.setFont(font);
+    this->followPlayerText.setCharacterSize(14);
+    //tempText.setColor(Color::White); // Obsoleto
+    this->followPlayerText.setOutlineColor(Color::White);
 
-        //Static Text Init (Arriba a la izquierda en la pantalla)
-        this->staticPlayerText.setFont(font);
-        this->staticPlayerText.setCharacterSize(14);
-        //tempText.setColor(Color::White); // Obsoleto
-        this->staticPlayerText.setOutlineColor(Color::White);
-        this->staticPlayerText.setString("");
-    }
+    //Static Text Init (Arriba a la izquierda en la pantalla)
+    this->staticPlayerText.setFont(font);
+    this->staticPlayerText.setCharacterSize(14);
+    //tempText.setColor(Color::White); // Obsoleto
+    this->staticPlayerText.setOutlineColor(Color::White);
+
+    // Barra de energia en player
+    this->playerExpBar.setSize(Vector2f(90.f, 10.f)); // Rectángulo 90 X 10
+    this->playerExpBar.setFillColor(Color(0.f, 90.f, 200.f, 200.f));
+
 
     // Texto en enemigos
     this->enemyText.setFont(this->font);
@@ -100,7 +100,7 @@ void Game::UpdateUIPlayer(int index) // Actualiza letreros de player numero inde
         // Poner el texto en la posición del player
         this->followPlayerText.setPosition(
                 this->players[index].getPosition().x,
-                this->players[index].getPosition().y - 20.f
+                this->players[index].getPosition().y - 22.f
         );
 
         // Letras a poner
@@ -111,9 +111,19 @@ void Game::UpdateUIPlayer(int index) // Actualiza letreros de player numero inde
                 + "\n\n\n\n\n\n" // Para escribir en la paerte baja del player
                 + std::to_string(this->players[index].getLevel())
         );
-    }
 
-    //STATIC TEXT
+        //BARS Barra de energia de player
+        this->playerExpBar.setPosition(
+                this->players[index].getPosition().x + 20.f,
+                this->players[index].getPosition().y + 89.f);
+
+        this->playerExpBar.setScale(
+                (static_cast<float>(this->players[index].getExp()) / this->players[index].getExpNext()),
+                1.f
+        );
+
+        //STATIC TEXT
+    }
 }
 
 void Game::UpdateUIEnemy(int index) // Actualiza letreros enemigo
@@ -238,15 +248,6 @@ void Game::Draw()
 
     for (size_t i = 0; i < this->enemies.size(); i++)
     {
-        // Posiciona el texto del enemigo
-        //this->enemyText.setPosition(this->enemies[i].getPosition());
-
-        //this->enemyText.setString(
-        //        std::to_string(this->enemies[i].getHP()) +
-        //        "/" +
-        //        std::to_string(this->enemies[i].getHPMax()));
-
-
         this->enemies[i].Draw(*this->window); // Dibuja enemigo
 
         //UI
@@ -263,7 +264,8 @@ void Game::Draw()
 
             //UI
             this->UpdateUIPlayer(i);
-            this->window->draw(this->followPlayerText); //UI
+            this->window->draw(this->followPlayerText);
+            this->window->draw(this->playerExpBar);
         }
     }
 

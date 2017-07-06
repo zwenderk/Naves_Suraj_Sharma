@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(Cap16)
+project(Cap17)
 
 #set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wall")
 

@@ -9,12 +9,17 @@ private:
     RenderWindow *window;
     float dtMultiplier;
 
+    //UI
+
+
     // Texto
     Font font;
     Text followPlayerText;
     Text staticPlayerText;
     Text enemyText;
     Text gameOverText;
+
+    RectangleShape playerExpBar;
 
     //Players
     std::vector<Player> players;

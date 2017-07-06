@@ -73,8 +73,10 @@ public:
     inline const int& getLevel()const { return  this->level;}
     inline const int& getExp()const { return  this->exp;}
     inline const int& getExpNext()const { return  this->expNext;}
+    inline void gainExp(int exp) {this->exp += exp; }
 
     //Funciones
+    void UpdateLeveling();
     void UpdateAccesories(const float &dt);
     void Combat(const float &dt);
     void Movement(const float &dt);

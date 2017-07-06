@@ -10,7 +10,7 @@ Player::Player(
         int UP, int DOWN,
         int LEFT, int RIGHT,
         int SHOOT)
-        :level(1), exp(0), expNext(100),
+        :level(1), exp(100), expNext(100),
          hp(10), hpMax(10),
          damage(1), damageMax(2),
          score(0)
@@ -74,6 +74,11 @@ Player::Player(
 
 Player::~Player()
 {
+}
+
+void Player::UpdateLeveling()
+{
+
 }
 
 void Player::UpdateAccesories(const float &dt)

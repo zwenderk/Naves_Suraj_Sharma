@@ -127,7 +127,7 @@ CMAKE_OBJCOPY:FILEPATH=H:/MingW - i686-6.1.0-release-posix-dwarf-rt_v5-rev0.7z/m
 CMAKE_OBJDUMP:FILEPATH=H:/MingW - i686-6.1.0-release-posix-dwarf-rt_v5-rev0.7z/mingw32/bin/objdump.exe
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Cap16
+CMAKE_PROJECT_NAME:STATIC=Cap17
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=H:/MingW - i686-6.1.0-release-posix-dwarf-rt_v5-rev0.7z/mingw32/bin/ranlib.exe
@@ -234,6 +234,12 @@ Cap16_BINARY_DIR:STATIC=H:/ProyectosCLion/SFML - C++ Game Development(Suraj Shar
 
 //Value Computed by CMake
 Cap16_SOURCE_DIR:STATIC=H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma
+
+//Value Computed by CMake
+Cap17_BINARY_DIR:STATIC=H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma/cmake-build-debug
+
+//Value Computed by CMake
+Cap17_SOURCE_DIR:STATIC=H:/ProyectosCLion/SFML - C++ Game Development(Suraj Sharma)/Todo/Naves_Suraj_Sharma
 
 //OpenGL library for win32
 OPENGL_gl_LIBRARY:STRING=opengl32
