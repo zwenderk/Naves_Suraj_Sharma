@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(Cap18)
+project(Cap19)
 
 #set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wall")
 
@@ -12,7 +12,7 @@ set(SFML_LIBRARY_PATH h:/ProyectosCLion/__LIBRERIAS__/SFML-2.4.2/lib)
 
 set(SOURCE_FILES
         main.cpp Game.cpp Game.h
-        Player.cpp Player.h Bullet.cpp Bullet.h Enemy.cpp Enemy.h)
+        Player.cpp Player.h Bullet.cpp Bullet.h Enemy.cpp Enemy.h TextTag.cpp TextTag.h)
 
 include_directories(
         ${SFML_INCLUDE_PATH}
