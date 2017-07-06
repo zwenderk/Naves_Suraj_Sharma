@@ -70,7 +70,9 @@ public:
     inline void takeDamage(int damage) {this->hp -= damage;}
     inline bool isAlive()const { return this->hp > 0;}
     inline const unsigned& getPlayerNr()const { return this->playerNr; } // Pongo unsigned
-
+    inline const int& getLevel()const { return  this->level;}
+    inline const int& getExp()const { return  this->exp;}
+    inline const int& getExpNext()const { return  this->expNext;}
 
     //Funciones
     void UpdateAccesories(const float &dt);

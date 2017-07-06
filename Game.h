@@ -11,8 +11,8 @@ private:
 
     // Texto
     Font font;
-    std::vector<Text> followPlayerTexts;
-    std::vector<Text> staticPlayerTexts;
+    Text followPlayerText;
+    Text staticPlayerText;
     Text enemyText;
     Text gameOverText;
 
@@ -40,7 +40,8 @@ public:
 
     // Funciones
     void InitUI();   // Inicializa letreros
-    void UpdateUI(); // Actualiza letreros
+    void UpdateUIPlayer(int index); // Actualiza letreros player
+    void UpdateUIEnemy(int index); // Actualiza letreros enemigo
     void Update(const float &dt);
     void DrawUI();   // Dibuja letreros
     void Draw();

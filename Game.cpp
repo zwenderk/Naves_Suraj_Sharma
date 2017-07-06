@@ -64,23 +64,18 @@ void Game::InitUI() // Inicializa letreros
     for (size_t i = 0; i < this->players.size(); i++)
     {
         //Follow Text Init (texto en el player)
-
-        tempText.setFont(font);
-        tempText.setCharacterSize(14);
+        this->followPlayerText.setFont(font);
+        this->followPlayerText.setCharacterSize(14);
         //tempText.setColor(Color::White); // Obsoleto
-        tempText.setOutlineColor(Color::White);
-        tempText.setString(std::to_string(i));
-
-        this->followPlayerTexts.push_back(Text(tempText));
+        this->followPlayerText.setOutlineColor(Color::White);
+        this->followPlayerText.setString(std::to_string(i));
 
         //Static Text Init (Arriba a la izquierda en la pantalla)
-        tempText.setFont(font);
-        tempText.setCharacterSize(14);
+        this->staticPlayerText.setFont(font);
+        this->staticPlayerText.setCharacterSize(14);
         //tempText.setColor(Color::White); // Obsoleto
-        tempText.setOutlineColor(Color::White);
-        tempText.setString("");
-
-        this->staticPlayerTexts.push_back(Text(tempText));
+        this->staticPlayerText.setOutlineColor(Color::White);
+        this->staticPlayerText.setString("");
     }
 
     // Texto en enemigos
@@ -96,21 +91,43 @@ void Game::InitUI() // Inicializa letreros
     this->gameOverText.setPosition(this->window->getSize().x/2 - 100.f, this->window->getSize().y / 2);
 }
 
-void Game::UpdateUI() // Actualiza letreros
+void Game::UpdateUIPlayer(int index) // Actualiza letreros de player numero index
 {
-    for (size_t i = 0; i < this->followPlayerTexts.size(); i++)
+    if (index >= this->players.size())
+        std::cout << "OUT OF BOUNDS! (UPDATEUI)";
+    else //FOLLOW TEXT
     {
         // Poner el texto en la posición del player
-        this->followPlayerTexts[i].setPosition(this->players[i].getPosition().x, this->players[i].getPosition().y - 20.f);
+        this->followPlayerText.setPosition(
+                this->players[index].getPosition().x,
+                this->players[index].getPosition().y - 20.f
+        );
+
         // Letras a poner
-        this->followPlayerTexts[i].setString(std::to_string(this->players[i].getPlayerNr()) + "                   " +
-                                                     this->players[i].getHpAsString());
+        this->followPlayerText.setString(
+                std::to_string(this->players[index].getPlayerNr())
+                + "                   "
+                + this->players[index].getHpAsString()
+                + "\n\n\n\n\n\n" // Para escribir en la paerte baja del player
+                + std::to_string(this->players[index].getLevel())
+        );
     }
 
-    for (size_t i = 0; i < this->staticPlayerTexts.size(); i++)
-    {
+    //STATIC TEXT
+}
 
-    }
+void Game::UpdateUIEnemy(int index) // Actualiza letreros enemigo
+{
+    // Posiciona el texto del enemigo
+    this->enemyText.setPosition(this->enemies[index].getPosition());
+
+    this->enemyText.setString(
+            std::to_string(this->enemies[index].getHP()) +
+            "/" +
+            std::to_string(this->enemies[index].getHPMax()));
+
+    //this->enemies[i].Draw(*this->window); // Dibuja enemigo
+    //this->window->draw(this->enemyText); // Dibuja texto de enemigo
 }
 
 void Game::Update(const float &dt)
@@ -206,64 +223,55 @@ void Game::Update(const float &dt)
         }
 
         //UPDATE UI
-        this->UpdateUI();
+        //this->UpdateUI();
     }
 }
 
 void Game::DrawUI()
 {
-    for (size_t i = 0; i < this->followPlayerTexts.size(); i++)
-    {
-        if (this->players[i].isAlive())
-        {
-            // Dibujar el texto en la posición del player si está vivo el player
-            this->window->draw(this->followPlayerTexts[i]);
-        }
-    }
 
-    for (size_t i = 0; i < this->staticPlayerTexts.size(); i++)
-    {
-        if (this->players[i].isAlive())
-        {
-            // Dibujar texto estático en la esquina izquierda superior si está vivo el player
-            this->window->draw(this->staticPlayerTexts[i]);
-        }
-    }
-
-    if (this->playersAlive <= 0)
-    {
-        this->window->draw(this->gameOverText);
-    }
 }
 
 void Game::Draw()
 {
     this->window->clear();
 
-    for (size_t i = 0; i < this->players.size(); i++)
-    {
-        if (this->players[i].isAlive())
-        {
-            this->players[i].Draw(*this->window);
-        }
-    }
-
     for (size_t i = 0; i < this->enemies.size(); i++)
     {
         // Posiciona el texto del enemigo
-        this->enemyText.setPosition(this->enemies[i].getPosition());
+        //this->enemyText.setPosition(this->enemies[i].getPosition());
 
-        this->enemyText.setString(
-                std::to_string(this->enemies[i].getHP()) +
-                "/" +
-                std::to_string(this->enemies[i].getHPMax()));
+        //this->enemyText.setString(
+        //        std::to_string(this->enemies[i].getHP()) +
+        //        "/" +
+        //        std::to_string(this->enemies[i].getHPMax()));
+
 
         this->enemies[i].Draw(*this->window); // Dibuja enemigo
-        this->window->draw(this->enemyText); // Dibuja texto de enemigo
 
+        //UI
+        this->UpdateUIEnemy(i);
+        this->window->draw(this->enemyText); // Dibuja texto de enemigo
     }
 
-    this->DrawUI();
+    for (size_t i = 0; i < this->players.size(); i++)
+    {
+        if (this->players[i].isAlive()) // Si player está vivo
+        {
+            // Dibujar el texto en la posición del player
+            this->players[i].Draw(*this->window);
+
+            //UI
+            this->UpdateUIPlayer(i);
+            this->window->draw(this->followPlayerText); //UI
+        }
+    }
+
+    //GAME OVER TEXT
+    if (this->playersAlive <= 0)
+    {
+        this->window->draw(this->gameOverText);
+    }
 
     this->window->display();
 }

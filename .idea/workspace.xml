@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Cap15" targetName="Cap15" />
+      <config projectName="Cap16" targetName="Cap16" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -13,19 +13,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d761272f-3ec7-44b1-9929-10570707b98c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bullet.cpp" afterPath="$PROJECT_DIR$/Bullet.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bullet.h" afterPath="$PROJECT_DIR$/Bullet.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Enemy.cpp" afterPath="$PROJECT_DIR$/Enemy.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Enemy.h" afterPath="$PROJECT_DIR$/Enemy.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.cpp" afterPath="$PROJECT_DIR$/Game.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.h" afterPath="$PROJECT_DIR$/Game.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Player.cpp" afterPath="$PROJECT_DIR$/Player.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Player.h" afterPath="$PROJECT_DIR$/Player.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,7 +107,7 @@
                 <state relative-caret-position="88">
                   <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding>
-                    <marker date="1499186781782" expanded="true" signature="48:2163" ph="{...}" />
+                    <marker date="1499199886783" expanded="true" signature="48:2348" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -215,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Cap15">
+  <component name="RunManager" selected="Application.Cap16">
     <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
       <method />
     </configuration>
@@ -223,11 +217,11 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Cap15" TARGET_NAME="Cap01" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Cap16" TARGET_NAME="Cap01" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Cap15" TARGET_NAME="Cap01" CONFIG_NAME="Debug">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Cap16" TARGET_NAME="Cap01" CONFIG_NAME="Debug">
       <envs />
       <method />
     </configuration>
@@ -427,13 +421,13 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Cap15" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Cap15" TARGET_NAME="Cap15" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Cap15" RUN_TARGET_NAME="Cap15">
+    <configuration default="false" name="Cap16" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Cap16" TARGET_NAME="Cap16" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Cap16" RUN_TARGET_NAME="Cap16">
       <envs />
       <method />
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Cap15" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Cap16" />
     </list>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -483,12 +477,12 @@
       <workItem from="1498988933566" duration="2401000" />
       <workItem from="1498991936100" duration="6228000" />
       <workItem from="1499002664972" duration="1248000" />
-      <workItem from="1499354627035" duration="1139000" />
+      <workItem from="1499354627035" duration="1248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66377000" />
+    <option name="totallyTimeSpent" value="66486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -617,7 +611,7 @@
         <state relative-caret-position="770">
           <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding>
-            <marker date="1499186781782" expanded="true" signature="48:2163" ph="{...}" />
+            <marker date="1499199886783" expanded="true" signature="48:2348" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -676,7 +670,7 @@
         <state relative-caret-position="770">
           <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding>
-            <marker date="1499186781782" expanded="true" signature="48:2163" ph="{...}" />
+            <marker date="1499199886783" expanded="true" signature="48:2348" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -727,7 +721,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1499186781782" expanded="true" signature="48:2163" ph="{...}" />
+            <marker date="1499199886783" expanded="true" signature="48:2348" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -777,7 +771,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1499186781782" expanded="true" signature="48:2163" ph="{...}" />
+            <marker date="1499199886783" expanded="true" signature="48:2348" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -827,7 +821,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1499186781782" expanded="true" signature="48:2163" ph="{...}" />
+            <marker date="1499199886783" expanded="true" signature="48:2348" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -876,7 +870,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1499186781782" expanded="true" signature="48:2163" ph="{...}" />
+            <marker date="1499199886783" expanded="true" signature="48:2348" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -919,7 +913,7 @@
         <state relative-caret-position="88">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <marker date="1499186781782" expanded="true" signature="48:2163" ph="{...}" />
+            <marker date="1499199886783" expanded="true" signature="48:2348" ph="{...}" />
           </folding>
         </state>
       </provider>
