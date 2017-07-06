@@ -6,6 +6,7 @@ Game::Game(RenderWindow *window)
 {
     this->window = window;
     this->window->setFramerateLimit(60);
+    this->runGame = true;
 
     //Inicializa fonts
     this->font.loadFromFile("../Fonts/Dosis-Light.ttf");
@@ -29,6 +30,13 @@ Game::Game(RenderWindow *window)
     //Inicializa players
     this->players.push_back(Player(this->textures));
 
+    /*this->players.push_back(Player(this->textures,
+      Keyboard::Numpad8, Keyboard::Numpad5,
+      Keyboard::Numpad4, Keyboard::Numpad6,
+      Keyboard::Numpad0 ));*/
+
+    this->alivePlayers = this->players.size(); // Players vivos
+
     // Inicializa enemigos
     Enemy e1(
             &this->textures[enemy01], window->getSize(), // Textura y  limites de ventana
@@ -43,10 +51,7 @@ Game::Game(RenderWindow *window)
     this->enemySpawnTimer = this->enemySpawnTimerMax;
 
 
-    /*this->players.push_back(Player(this->textures,
-          Keyboard::Numpad8, Keyboard::Numpad5,
-          Keyboard::Numpad4, Keyboard::Numpad6,
-          Keyboard::Numpad0 ));*/
+
 
     this->InitUI();
 }
@@ -106,72 +111,94 @@ void Game::UpdateUI() // Actualiza letreros
 
 void Game::Update()
 {
-    //Update timers
-    if (this->enemySpawnTimer < this->enemySpawnTimerMax)
-        this->enemySpawnTimer++;
-
-    //Spawn enemies
-    if (this->enemySpawnTimer >= this->enemySpawnTimerMax)
+    if (this->runGame)
     {
-        this->enemies.push_back(Enemy(
-                &this->textures[enemy01], this->window->getSize(),
-                Vector2f(0.f, 0.f), // Posición
-                Vector2f(-1.f, 0.f), Vector2f(0.1f, 0.1f), // Dirección y escala
-                0, rand() % 3 + 1, 3, 1)); // Tipo, máxima energia, maximo daño, minimo daño
 
-        this->enemySpawnTimer = 0; //Reset timer
-    }
+        //Update timers
+        if (this->enemySpawnTimer < this->enemySpawnTimerMax)
+            this->enemySpawnTimer++;
 
-    for (size_t i = 0; i < this->players.size(); i++) // Para cada player
-    {
-        //UPDATE PLAYERS
-        this->players[i].Update(this->window->getSize());
-
-        //Bullets update
-        for(size_t k = 0; k < this->players[i].getBullets().size(); k++)
+        //Spawn enemies (lanza enemigo si ha pasado el tiempo adecuado)
+        if (this->enemySpawnTimer >= this->enemySpawnTimerMax)
         {
-            this->players[i].getBullets()[k].Update();
+            this->enemies.push_back(Enemy(
+                    &this->textures[enemy01], this->window->getSize(),
+                    Vector2f(0.f, 0.f), // Posición
+                    Vector2f(-1.f, 0.f), Vector2f(0.1f, 0.1f), // Dirección y escala
+                    0, rand() % 3 + 1, 3, 1)); // Tipo, máxima energia, maximo daño, minimo daño
 
-            // Prueba de colisión de enemigo
-            for(size_t j = 0; j < this->enemies.size(); j++)
+            this->enemySpawnTimer = 0; //Reset timer
+        }
+
+        for (size_t i = 0; i < this->players.size(); i++) // Para cada player
+        {
+            //UPDATE PLAYERS
+            this->players[i].Update(this->window->getSize());
+
+            //Bullets update
+            for (size_t k = 0; k < this->players[i].getBullets().size(); k++)
             {
-                // Si proyectil choca con enemigo, destruir proyectil y enemigo
-                if (this->players[i].getBullets()[k].getGlobalBounds().intersects(this->enemies[j].getGlobalBounds()))
+                this->players[i].getBullets()[k].Update();
+
+                // Prueba de colisión de enemigo y proyectil
+                for (size_t j = 0; j < this->enemies.size(); j++)
+                {
+                    // Si proyectil choca con enemigo, destruir proyectil y enemigo
+                    if (this->players[i].getBullets()[k].getGlobalBounds().intersects(
+                            this->enemies[j].getGlobalBounds()))
+                    {
+                        this->players[i].getBullets().erase(this->players[i].getBullets().begin() + k);
+
+                        if (this->enemies[j].getHP() > 0) // Si enemigo tiene mas energia que 0
+                            this->enemies[j].takeDamage(
+                                    this->players[i].getDamage()); // Hacerle daño y bajarle la energia
+                        if (this->enemies[j].getHP() <= 0) // Si enemigo tiene energia 0 o negativa
+                            this->enemies.erase(this->enemies.begin() + j); // Borrarlo
+                        return; //RETURN!!!!!!!!
+                    }
+                }
+
+                //Window bounds check
+                // Si proyectil sale por la derecha, borrarlo
+                if (this->players[i].getBullets()[k].getPosition().x > this->window->getSize().x)
                 {
                     this->players[i].getBullets().erase(this->players[i].getBullets().begin() + k);
+                    return; //RETURN!!!!!!!!!!!!
+                }
+            }
+        }
 
-                    if (this->enemies[j].getHP() > 0) // Si enemigo tiene mas energia que 0
-                        this->enemies[j].takeDamage(this->players[i].getDamage()); // Hacerle daño y bajarle la energia
-                    if (this->enemies[j].getHP() <= 0) // Si enemigo tiene energia 0 o negativa
-                        this->enemies.erase(this->enemies.begin() + j); // Borrarlo
-                    return; //RETURN!!!!!!!!
+        //Update enemies
+        for (size_t i = 0; i < enemies.size(); i++)
+        {
+            this->enemies[i].Update();
+
+            for (size_t k = 0; k < this->players.size(); k++) // Para todos los players
+            {
+                // Si player choca con enemigo
+                if (this->players[k].getGlobalBounds().intersects(this->enemies[i].getGlobalBounds()))
+                {
+                    this->players[k].takeDamage(this->enemies[i].getDamage()); // Player recibe daño y baja energia
+
+                    if (!this->players[i].isAlive()) // Si player no está vivo (tiene energia negativa)
+                        this->players.erase(this->players.begin() + i); // Borrarlo
+
+                    this->enemies.erase(this->enemies.begin() + i); // Borrar enemigo
+                    return; //RETURN!!!!!!!!!!
                 }
             }
 
-            //Window bounds check
-            // Si proyectil sale por la derecha, borrarlo
-            if (this->players[i].getBullets()[k].getPosition().x > this->window->getSize().x)
+            // al entrar entero en la izquierda de la ventana borrar enemigo
+            if (this->enemies[i].getPosition().x < 0 - this->enemies[i].getGlobalBounds().width)
             {
-                this->players[i].getBullets().erase(this->players[i].getBullets().begin() + k);
-                return; //RETURN!!!!!!!!!!!!
+                this->enemies.erase(this->enemies.begin() + i);
+                return; //RETURN!!!!!!!!!!
             }
         }
+
+        //UPDATE UI
+        this->UpdateUI();
     }
-
-    for(size_t i = 0; i < enemies.size(); i++)
-    {
-        this->enemies[i].Update();
-
-        // al entrar entero en la izquierda de la ventana borrar enemigo
-        if (this->enemies[i].getPosition().x < 0 - this->enemies[i].getGlobalBounds().width)
-        {
-            this->enemies.erase(this->enemies.begin() + i);
-            break; //RETURN!!!!!!!!!!
-        }
-    }
-
-    //UPDATE UI
-    this->UpdateUI();
 }
 
 void Game::DrawUI()
@@ -180,11 +207,11 @@ void Game::DrawUI()
     {
         // Dibujar el texto en la posición del player
         this->window->draw(this->followPlayerTexts[i]);
-
     }
 
     for (size_t i = 0; i < this->staticPlayerTexts.size(); i++)
     {
+        // Dibujar texto estático en la esquina izquierda superior
         this->window->draw(this->staticPlayerTexts[i]);
     }
 }

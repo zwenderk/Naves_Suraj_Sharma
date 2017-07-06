@@ -7,6 +7,7 @@ class Game
 {
 private:
     RenderWindow *window;
+    bool runGame;
 
     // Texto
     Font font;
@@ -17,6 +18,7 @@ private:
 
     //Players
     std::vector<Player> players;
+    int alivePlayers;
 
     // Enemigos
     std::vector<Enemy> enemies;
