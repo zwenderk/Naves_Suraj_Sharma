@@ -172,7 +172,7 @@ void Game::Update(const float &dt)
                 {
                     this->players[i].getBullets()[k].Update(dt);
 
-                    // Prueba de colisión de enemigo y proyectil
+                    //Enemy collision check, prueba de colisión de enemigo y proyectil
                     for (size_t j = 0; j < this->enemies.size(); j++)
                     {
                         // Si proyectil choca con enemigo, destruir proyectil y enemigo
@@ -181,11 +181,19 @@ void Game::Update(const float &dt)
                         {
                             this->players[i].getBullets().erase(this->players[i].getBullets().begin() + k);
 
+                            //Enemy take damage, enemigo recibe daño
                             if (this->enemies[j].getHP() > 0) // Si enemigo tiene mas energia que 0
                                 this->enemies[j].takeDamage(
                                         this->players[i].getDamage()); // Hacerle daño y bajarle la energia
+
+                            //Enemy dead, Muerte de enemigo
                             if (this->enemies[j].getHP() <= 0) // Si enemigo tiene energia 0 o negativa
+                            {
+                                this->players[i].gainExp(this->enemies[j].getHPMax()
+                                       + (rand() % this->enemies[j].getHPMax() + 1)); // Player gana energia
                                 this->enemies.erase(this->enemies.begin() + j); // Borrarlo
+
+                            }
                             return; //RETURN!!!!!!!!
                         }
                     }

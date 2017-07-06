@@ -36,6 +36,12 @@ private:
     int level;
     int exp;
     int expNext;
+    int statPoints;
+
+    int cooling; //endurance (resistencia)
+    int plating; //vigor (vigor)
+    int power; //strength (fuerza)
+    int wiring; //agility (agilidad)
 
     int hp;
     int hpMax;
@@ -73,7 +79,7 @@ public:
     inline const int& getLevel()const { return  this->level;}
     inline const int& getExp()const { return  this->exp;}
     inline const int& getExpNext()const { return  this->expNext;}
-    inline void gainExp(int exp) {this->exp += exp; }
+    inline void gainExp(int exp) {this->exp += exp; this->UpdateLeveling(); }
 
     //Funciones
     void UpdateLeveling();
