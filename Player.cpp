@@ -5,10 +5,11 @@ unsigned Player::players = 0;
 enum controls {UP = 0, DOWN, LEFT, RIGHT, SHOOT};
 enum weapons {LASER = 0, MISSILE01, MISSILE02}; // Proyectiles
 
-Player::Player(std::vector<Texture> &textures,
-               int UP, int DOWN,
-               int LEFT, int RIGHT,
-               int SHOOT)
+Player::Player(
+        std::vector<Texture> &textures,
+        int UP, int DOWN,
+        int LEFT, int RIGHT,
+        int SHOOT)
         :level(1), exp(0), expNext(100),
          hp(10), hpMax(10),
          damage(1), damageMax(2),
@@ -181,7 +182,8 @@ void Player::Movement()
 }
 
 void Player::Combat()
-{   // Si ha pasado el tiempo adecuado crear proyectil y reiniciar contador de tiempo
+{   // Si se ha presionado tecla de disparo y ha pasado el tiempo adecuado
+    // crear proyectil y reiniciar contador de tiempo
     if (Keyboard::isKeyPressed(Keyboard::Key(this->controls[controls::SHOOT] ))
         && this->shootTimer >= this->shootTimerMax)
     {

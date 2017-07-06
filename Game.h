@@ -1,13 +1,14 @@
 #pragma once
 
 #include "Player.h"
+#include "Enemy.h"
 
 class Game
 {
 private:
     RenderWindow *window;
 
-    //Text
+    // Texto
     Font font;
     std::vector<Text> followPlayerTexts;
     std::vector<Text> staticPlayerTexts;
@@ -15,27 +16,26 @@ private:
     //Players
     std::vector<Player> players;
 
-    //Textures
+    // Enemigos
+    std::vector<Enemy> enemies;
+
+    // Texturas
     std::vector<Texture> textures;
-    //Texture playerTexture; // Textura de la nave
-    //Texture bulletTexture; // Textura del proyectil
-    //Texture mainGunTexture01; // Textura arma de disparo
 
 public:
     Game(RenderWindow *window);
     virtual ~Game();
 
-    //Accessors
-    // Ojo referencia a clase window
+    //Accessors - Ojo referencia a clase window
     inline  RenderWindow& getWindow() {return *this->window;}
 
     //Setters
 
-    //Functions
-    void InitUI(); // Inicializa letreros
+    // Funciones
+    void InitUI();   // Inicializa letreros
     void UpdateUI(); // Actualiza letreros
     void Update();
-    void DrawUI(); // Dibuja letreros
+    void DrawUI();   // Dibuja letreros
     void Draw();
 };
 
